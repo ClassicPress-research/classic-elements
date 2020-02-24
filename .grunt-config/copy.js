@@ -40,6 +40,9 @@ const getBuildFiles = [
 	'!yarn.lock',
 	'!*~',
 
+	// Ignore built plugin zipfiles
+	'!classic-elementor-*.zip',
+
 	// Conflict with above rule.
 	'core/files/assets/**',
 ];
