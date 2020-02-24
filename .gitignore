@@ -12,11 +12,6 @@ assets/js/
 *.log
 *.map
 
-# build tools lock
-composer.lock
-package-lock.json
-yarn.lock
-
 # IDE's
 .project/
 .vscode/
