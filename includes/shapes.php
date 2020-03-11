@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor shapes.
+ * Classic Elements shapes.
  *
- * Elementor shapes handler class is responsible for setting up the supported
+ * Classic Elements shapes handler class is responsible for setting up the supported
  * shape dividers.
  *
  * @since 1.3.0
@@ -232,11 +232,11 @@ class Shapes {
 		/**
 		 * Additional shapes.
 		 *
-		 * Filters the shapes used by Elementor to add additional shapes.
+		 * Filters the shapes used by Classic Elements to add additional shapes.
 		 *
 		 * @since 2.0.1
 		 *
-		 * @param array $additional_shapes Additional Elementor shapes.
+		 * @param array $additional_shapes Additional Classic Elements shapes.
 		 */
 		$additional_shapes = apply_filters( 'elementor/shapes/additional_shapes', $additional_shapes );
 		return $additional_shapes;

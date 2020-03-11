@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor WordPress widgets manager.
+ * Classic Elements ClassicPress widgets manager.
  *
- * Elementor WordPress widgets manager handler class is responsible for
+ * Classic Elements ClassicPress widgets manager handler class is responsible for
  * registering and initializing all the supported controls, both regular
  * controls and the group controls.
  *
@@ -17,9 +17,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 class WordPress_Widgets_Manager {
 
 	/**
-	 * WordPress widgets manager constructor.
+	 * ClassicPress widgets manager constructor.
 	 *
-	 * Initializing the WordPress widgets manager in Elementor editor.
+	 * Initializing the ClassicPress widgets manager in Classic Elements editor.
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -36,7 +36,7 @@ class WordPress_Widgets_Manager {
 	/**
 	 * Before enqueue scripts.
 	 *
-	 * Prints custom scripts required to run WordPress widgets in Elementor
+	 * Prints custom scripts required to run ClassicPress widgets in Classic Elements
 	 * editor.
 	 *
 	 * Fired by `elementor/editor/before_enqueue_scripts` action.
@@ -71,9 +71,9 @@ class WordPress_Widgets_Manager {
 	}
 
 	/**
-	 * WordPress widgets footer.
+	 * ClassicPress widgets footer.
 	 *
-	 * Prints WordPress widgets scripts in Elementor editor footer.
+	 * Prints ClassicPress widgets scripts in Classic Elements editor footer.
 	 *
 	 * Fired by `elementor/editor/footer` action.
 	 *

@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor maintenance.
+ * Classic Elements maintenance.
  *
- * Elementor maintenance handler class is responsible for setting up Elementor
+ * Classic Elements maintenance handler class is responsible for setting up Classic Elements
  * activation and uninstallation hooks.
  *
  * @since 1.0.0
@@ -16,9 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Maintenance {
 
 	/**
-	 * Activate Elementor.
+	 * Activate Classic Elements.
 	 *
-	 * Set Elementor activation hook.
+	 * Set Classic Elements activation hook.
 	 *
 	 * Fired by `register_activation_hook` when the plugin is activated.
 	 *
@@ -40,9 +40,9 @@ class Maintenance {
 	}
 
 	/**
-	 * Uninstall Elementor.
+	 * Uninstall Classic Elements.
 	 *
-	 * Set Elementor uninstallation hook.
+	 * Set Classic Elements uninstallation hook.
 	 *
 	 * Fired by `register_uninstall_hook` when the plugin is uninstalled.
 	 *
@@ -57,7 +57,7 @@ class Maintenance {
 	/**
 	 * Init.
 	 *
-	 * Initialize Elementor Maintenance.
+	 * Initialize Classic Elements Maintenance.
 	 *
 	 * @since 1.0.0
 	 * @access public

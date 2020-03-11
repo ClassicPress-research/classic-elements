@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor shortcode widget.
+ * Classic Elements shortcode widget.
  *
- * Elementor widget that insert any shortcodes into the page.
+ * Classic Elements widget that insert any shortcodes into the page.
  *
  * @since 1.0.0
  */

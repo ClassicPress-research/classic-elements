@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * General Category
  *
- * Provides general items related to Elementor Admin.
+ * Provides general items related to Classic Elements Admin.
  */
 class General extends Base_Category {
 

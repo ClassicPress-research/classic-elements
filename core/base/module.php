@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor module.
+ * Classic Elements module.
  *
  * An abstract class that provides the needed properties and methods to
  * manage and handle modules in inheriting classes.

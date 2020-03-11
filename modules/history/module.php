@@ -9,10 +9,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor history module.
+ * Classic Elements history module.
  *
- * Elementor history module handler class is responsible for registering and
- * managing Elementor history modules.
+ * Classic Elements history module handler class is responsible for registering and
+ * managing Classic Elements history modules.
  *
  * @since 1.7.0
  */

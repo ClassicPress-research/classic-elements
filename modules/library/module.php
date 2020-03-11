@@ -10,10 +10,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor library module.
+ * Classic Elements library module.
  *
- * Elementor library module handler class is responsible for registering and
- * managing Elementor library modules.
+ * Classic Elements library module handler class is responsible for registering and
+ * managing Classic Elements library modules.
  *
  * @since 2.0.0
  */
@@ -36,7 +36,7 @@ class Module extends BaseModule {
 	/**
 	 * Library module constructor.
 	 *
-	 * Initializing Elementor library module.
+	 * Initializing Classic Elements library module.
 	 *
 	 * @since 2.0.0
 	 * @access public

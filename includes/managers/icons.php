@@ -9,9 +9,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor icons manager.
+ * Classic Elements icons manager.
  *
- * Elementor icons manager handler class
+ * Classic Elements icons manager handler class
  *
  * @since 2.4.0
  */

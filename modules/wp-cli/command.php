@@ -11,12 +11,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor Page Builder cli tools.
+ * Classic Elements Page Builder cli tools.
  */
 class Command extends \WP_CLI_Command {
 
 	/**
-	 * Flush the Elementor Page Builder CSS Cache.
+	 * Flush the Classic Elements Page Builder CSS Cache.
 	 *
 	 * [--network]
 	 *      Flush CSS Cache for all the sites in the network.
@@ -48,19 +48,19 @@ class Command extends \WP_CLI_Command {
 
 				Plugin::$instance->files_manager->clear_cache();
 
-				\WP_CLI::success( 'Flushed the Elementor CSS Cache for site - ' . get_option( 'home' ) );
+				\WP_CLI::success( 'Flushed the Classic Elements CSS Cache for site - ' . get_option( 'home' ) );
 
 				restore_current_blog();
 			}
 		} else {
 			Plugin::$instance->files_manager->clear_cache();
 
-			\WP_CLI::success( 'Flushed the Elementor CSS Cache' );
+			\WP_CLI::success( 'Flushed the Classic Elements CSS Cache' );
 		}
 	}
 
 	/**
-	 * Replace old URLs with new URLs in all Elementor pages.
+	 * Replace old URLs with new URLs in all Classic Elements pages.
 	 *
 	 * ## EXAMPLES
 	 *
@@ -94,7 +94,7 @@ class Command extends \WP_CLI_Command {
 	 * ## EXAMPLES
 	 *
 	 *  1. wp elementor sync-library
-	 *      - This will sync the library with Elementor cloud library.
+	 *      - This will sync the library with Classic Elements cloud library.
 	 *
 	 * @since 2.1.0
 	 * @access public

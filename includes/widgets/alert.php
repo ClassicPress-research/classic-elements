@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor alert widget.
+ * Classic Elements alert widget.
  *
- * Elementor widget that displays a collapsible display of content in an toggle
+ * Classic Elements widget that displays a collapsible display of content in an toggle
  * style, allowing the user to open multiple items.
  *
  * @since 1.0.0

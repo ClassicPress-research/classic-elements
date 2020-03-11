@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor repeater element.
+ * Classic Elements repeater element.
  *
- * Elementor repeater handler class is responsible for initializing the repeater.
+ * Classic Elements repeater handler class is responsible for initializing the repeater.
  *
  * @since 1.0.0
  */
@@ -30,7 +30,7 @@ class Repeater extends Element_Base {
 	/**
 	 * Repeater constructor.
 	 *
-	 * Initializing Elementor repeater element.
+	 * Initializing Classic Elements repeater element.
 	 *
 	 * @since 1.0.7
 	 * @access public

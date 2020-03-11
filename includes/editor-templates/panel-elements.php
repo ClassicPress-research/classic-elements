@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div id="elementor-panel-get-pro-elements" class="elementor-nerd-box">
 		<i class="elementor-nerd-box-icon eicon-hypster" aria-hidden="true"></i>
-		<div class="elementor-nerd-box-message"><?php echo __( 'Get more with Elementor Pro', 'elementor' ); ?></div>
+		<div class="elementor-nerd-box-message"><?php echo __( 'Get more with Classic Elements Pro', 'elementor' ); ?></div>
 		<a class="elementor-button elementor-button-default elementor-nerd-box-link" target="_blank" href="<?php echo Utils::get_pro_link( 'https://elementor.com/pro/?utm_source=panel-widgets&utm_campaign=gopro&utm_medium=wp-dash' ); ?>"><?php echo __( 'Go Pro', 'elementor' ); ?></a>
 	</div>
 </script>

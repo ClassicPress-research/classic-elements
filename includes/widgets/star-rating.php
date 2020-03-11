@@ -5,9 +5,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 /**
- * Elementor star rating widget.
+ * Classic Elements star rating widget.
  *
- * Elementor widget that displays star rating.
+ * Classic Elements widget that displays star rating.
  *
  * @since 2.3.0
  */

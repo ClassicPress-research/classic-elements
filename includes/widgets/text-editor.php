@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor text editor widget.
+ * Classic Elements text editor widget.
  *
- * Elementor widget that displays a WYSIWYG text editor, just like the WordPress
+ * Classic Elements widget that displays a WYSIWYG text editor, just like the WordPress
  * editor.
  *
  * @since 1.0.0

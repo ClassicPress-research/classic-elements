@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor counter widget.
+ * Classic Elements counter widget.
  *
- * Elementor widget that displays stats and numbers in an escalating manner.
+ * Classic Elements widget that displays stats and numbers in an escalating manner.
  *
  * @since 1.0.0
  */

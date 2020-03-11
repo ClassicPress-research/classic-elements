@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Scheme interface.
  *
- * An interface for Elementor Scheme.
+ * An interface for Classic Elements Scheme.
  *
  * @since 1.0.0
  */

@@ -8,10 +8,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor settings base model.
+ * Classic Elements settings base model.
  *
- * Elementor settings base model handler class is responsible for registering
- * and managing Elementor settings base models.
+ * Classic Elements settings base model handler class is responsible for registering
+ * and managing Classic Elements settings base models.
  *
  * @since 1.6.0
  * @abstract

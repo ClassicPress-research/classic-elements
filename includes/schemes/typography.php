@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor typography scheme.
+ * Classic Elements typography scheme.
  *
- * Elementor typography scheme class is responsible for initializing a scheme
+ * Classic Elements typography scheme class is responsible for initializing a scheme
  * for typography.
  *
  * @since 1.0.0

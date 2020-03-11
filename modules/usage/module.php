@@ -13,10 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor usage module.
+ * Classic Elements usage module.
  *
- * Elementor usage module handler class is responsible for registering and
- * managing Elementor usage data.
+ * Classic Elements usage module handler class is responsible for registering and
+ * managing Classic Elements usage data.
  *
  */
 class Module extends BaseModule {
@@ -528,7 +528,7 @@ class Module extends BaseModule {
 	/**
 	 * Usage module constructor.
 	 *
-	 * Initializing Elementor usage module.
+	 * Initializing Classic Elements usage module.
 	 *
 	 * @access public
 	 */

@@ -15,10 +15,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor documents manager.
+ * Classic Elements documents manager.
  *
- * Elementor documents manager handler class is responsible for registering and
- * managing Elementor documents.
+ * Classic Elements documents manager handler class is responsible for registering and
+ * managing Classic Elements documents.
  *
  * @since 2.0.0
  */
@@ -351,11 +351,11 @@ class Documents_Manager {
 		}
 
 		if ( empty( $post_data['post_title'] ) ) {
-			$post_data['post_title'] = __( 'Elementor', 'elementor' );
+			$post_data['post_title'] = __( 'Classic Elements', 'elementor' );
 			if ( 'post' !== $type ) {
 				$post_data['post_title'] = sprintf(
 					/* translators: %s: Document title */
-					__( 'Elementor %s', 'elementor' ),
+					__( 'Classic Elements %s', 'elementor' ),
 					call_user_func( [ $class, 'get_title' ] )
 				);
 			}
@@ -654,7 +654,7 @@ class Documents_Manager {
 	private function register_types() {
 		if ( ! did_action( 'elementor/documents/register' ) ) {
 			/**
-			 * Register Elementor documents.
+			 * Register Classic Elements documents.
 			 *
 			 * @since 2.0.0
 			 *

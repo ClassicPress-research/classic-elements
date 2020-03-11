@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor color picker scheme.
+ * Classic Elements color picker scheme.
  *
- * Elementor color picker scheme class is responsible for initializing a scheme
+ * Classic Elements color picker scheme class is responsible for initializing a scheme
  * for color pickers.
  *
  * @since 1.0.0

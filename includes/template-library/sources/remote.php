@@ -9,10 +9,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor template library remote source.
+ * Classic Elements template library remote source.
  *
- * Elementor template library remote source handler class is responsible for
- * handling remote templates from Elementor.com servers.
+ * Classic Elements template library remote source handler class is responsible for
+ * handling remote templates from Classic Elements.com servers.
  *
  * @since 1.0.0
  */
@@ -60,7 +60,7 @@ class Source_Remote extends Source_Base {
 	/**
 	 * Get remote templates.
 	 *
-	 * Retrieve remote templates from Elementor.com servers.
+	 * Retrieve remote templates from Classic Elements servers.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -86,7 +86,7 @@ class Source_Remote extends Source_Base {
 	/**
 	 * Get remote template.
 	 *
-	 * Retrieve a single remote template from Elementor.com servers.
+	 * Retrieve a single remote template from Classic Elements servers.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -104,7 +104,7 @@ class Source_Remote extends Source_Base {
 	/**
 	 * Save remote template.
 	 *
-	 * Remote template from Elementor.com servers cannot be saved on the
+	 * Remote template from Classic Elements servers cannot be saved on the
 	 * database as they are retrieved from remote servers.
 	 *
 	 * @since 1.0.0
@@ -121,7 +121,7 @@ class Source_Remote extends Source_Base {
 	/**
 	 * Update remote template.
 	 *
-	 * Remote template from Elementor.com servers cannot be updated on the
+	 * Remote template from Classic Elements servers cannot be updated on the
 	 * database as they are retrieved from remote servers.
 	 *
 	 * @since 1.0.0
@@ -138,7 +138,7 @@ class Source_Remote extends Source_Base {
 	/**
 	 * Delete remote template.
 	 *
-	 * Remote template from Elementor.com servers cannot be deleted from the
+	 * Remote template from Classic Elements servers cannot be deleted from the
 	 * database as they are retrieved from remote servers.
 	 *
 	 * @since 1.0.0
@@ -155,7 +155,7 @@ class Source_Remote extends Source_Base {
 	/**
 	 * Export remote template.
 	 *
-	 * Remote template from Elementor.com servers cannot be exported from the
+	 * Remote template from Classic Elements servers cannot be exported from the
 	 * database as they are retrieved from remote servers.
 	 *
 	 * @since 1.0.0
@@ -172,7 +172,7 @@ class Source_Remote extends Source_Base {
 	/**
 	 * Get remote template data.
 	 *
-	 * Retrieve the data of a single remote template from Elementor.com servers.
+	 * Retrieve the data of a single remote template from Classic Elements servers.
 	 *
 	 * @since 1.5.0
 	 * @access public

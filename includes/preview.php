@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor preview.
+ * Classic Elements preview.
  *
- * Elementor preview handler class is responsible for initializing Elementor in
+ * Classic Elements preview handler class is responsible for initializing Classic Elements in
  * preview mode.
  *
  * @since 1.0.0
@@ -30,7 +30,7 @@ class Preview {
 	/**
 	 * Init.
 	 *
-	 * Initialize Elementor preview mode.
+	 * Initialize Classic Elements preview mode.
 	 *
 	 * Fired by `template_redirect` action.
 	 *
@@ -85,7 +85,7 @@ class Preview {
 		/**
 		 * Preview init.
 		 *
-		 * Fires on Elementor preview init, after Elementor preview has finished
+		 * Fires on Classic Elements preview init, after Classic Elements preview has finished
 		 * loading but before any headers are sent.
 		 *
 		 * @since 1.0.0
@@ -209,7 +209,7 @@ class Preview {
 		/**
 		 * Preview enqueue styles.
 		 *
-		 * Fires after Elementor preview styles are enqueued.
+		 * Fires after Classic Elements preview styles are enqueued.
 		 *
 		 * @since 1.0.0
 		 */
@@ -244,7 +244,7 @@ class Preview {
 		/**
 		 * Preview enqueue scripts.
 		 *
-		 * Fires after Elementor preview scripts are enqueued.
+		 * Fires after Classic Elements preview scripts are enqueued.
 		 *
 		 * @since 1.5.4
 		 */
@@ -256,7 +256,7 @@ class Preview {
 	}
 
 	/**
-	 * Elementor Preview footer scripts and styles.
+	 * Classic Elements Preview footer scripts and styles.
 	 *
 	 * Handle styles and scripts from frontend.
 	 *
@@ -279,7 +279,7 @@ class Preview {
 	/**
 	 * Preview constructor.
 	 *
-	 * Initializing Elementor preview.
+	 * Initializing Classic Elements preview.
 	 *
 	 * @since 1.0.0
 	 * @access public

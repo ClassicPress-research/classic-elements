@@ -148,11 +148,11 @@ class Admin extends App {
 			<button id="elementor-switch-mode-button" type="button" class="button button-primary button-hero">
 				<span class="elementor-switch-mode-on">
 					<i class="eicon-arrow-<?php echo ( is_rtl() ) ? 'right' : 'left'; ?>" aria-hidden="true"></i>
-					<?php echo __( 'Back to WordPress Editor', 'elementor' ); ?>
+					<?php echo __( 'Back to ClassicPress Editor', 'elementor' ); ?>
 				</span>
 				<span class="elementor-switch-mode-off">
 					<i class="eicon-elementor-square" aria-hidden="true"></i>
-					<?php echo __( 'Edit with Elementor', 'elementor' ); ?>
+					<?php echo __( 'Edit with Classic Elements', 'elementor' ); ?>
 				</span>
 			</button>
 		</div>
@@ -160,7 +160,7 @@ class Admin extends App {
 			<a id="elementor-go-to-edit-page-link" href="<?php echo $document->get_edit_url(); ?>">
 				<div id="elementor-editor-button" class="button button-primary button-hero">
 					<i class="eicon-elementor-square" aria-hidden="true"></i>
-					<?php echo __( 'Edit with Elementor', 'elementor' ); ?>
+					<?php echo __( 'Edit with Classic Elements', 'elementor' ); ?>
 				</div>
 				<div class="elementor-loader-wrapper">
 					<div class="elementor-loader">
@@ -171,7 +171,7 @@ class Admin extends App {
 							<div class="elementor-loader-box"></div>
 						</div>
 					</div>
-					<div class="elementor-loading-title"><?php echo __( 'Loading', 'elementor' ); ?></div>
+					<div class="elementor-loading-title"><?php echo __( 'Loading, please wait!', 'elementor' ); ?></div>
 				</div>
 			</a>
 		</div>
@@ -203,9 +203,9 @@ class Admin extends App {
 	}
 
 	/**
-	 * Add Elementor post state.
+	 * Add Classic Elements post state.
 	 *
-	 * Adds a new "Elementor" post state to the post table.
+	 * Adds a new "Classic Elements" post state to the post table.
 	 *
 	 * Fired by `display_post_states` filter.
 	 *
@@ -219,7 +219,7 @@ class Admin extends App {
 	 */
 	public function add_elementor_post_state( $post_states, $post ) {
 		if ( User::is_current_user_can_edit( $post->ID ) && Plugin::$instance->db->is_built_with_elementor( $post->ID ) ) {
-			$post_states['elementor'] = __( 'Elementor', 'elementor' );
+			$post_states['elementor'] = __( 'Classic Elements', 'elementor' );
 		}
 
 		return $post_states;
@@ -272,7 +272,7 @@ class Admin extends App {
 
 		array_unshift( $links, $settings_link );
 
-		$links['go_pro'] = sprintf( '<a href="%1$s" target="_blank" class="elementor-plugins-gopro">%2$s</a>', Utils::get_pro_link( 'https://elementor.com/pro/?utm_source=wp-plugins&utm_campaign=gopro&utm_medium=wp-dash' ), __( 'Go Pro', 'elementor' ) );
+		$links['go_pro'] = sprintf( '<a href="%1$s" target="_blank" class="elementor-plugins-gopro">%2$s</a>', Utils::get_pro_link( 'https://classicelements.papge/pro/' ), __( 'Go Pro', 'elementor' ) );
 
 		return $links;
 	}
@@ -398,16 +398,16 @@ class Admin extends App {
 						<?php
 						printf(
 							/* translators: 1: Details URL, 2: Accessibility text, 3: Version number, 4: Update URL, 5: Accessibility text */
-							__( 'There is a new version of Elementor Page Builder available. <a href="%1$s" class="thickbox open-plugin-details-modal" aria-label="%2$s">View version %3$s details</a> or <a href="%4$s" class="update-link" aria-label="%5$s">update now</a>.', 'elementor' ),
+							__( 'There is a new version of Classic Elements Page Builder available. <a href="%1$s" class="thickbox open-plugin-details-modal" aria-label="%2$s">View version %3$s details</a> or <a href="%4$s" class="update-link" aria-label="%5$s">update now</a>.', 'elementor' ),
 							esc_url( $details_url ),
 							esc_attr( sprintf(
 								/* translators: %s: Elementor version */
-								__( 'View Elementor version %s details', 'elementor' ),
+								__( 'View Classic Elements version %s details', 'elementor' ),
 								$new_version
 							) ),
 							$new_version,
 							esc_url( $upgrade_url ),
-							esc_attr( __( 'Update Elementor Now', 'elementor' ) )
+							esc_attr( __( 'Update Classic Elements Now', 'elementor' ) )
 						);
 						?>
 					</p>
@@ -443,9 +443,9 @@ class Admin extends App {
 
 		if ( $is_elementor_screen ) {
 			$footer_text = sprintf(
-				/* translators: 1: Elementor, 2: Link to plugin review */
+				/* translators: 1: Classic Elements, 2: Link to plugin review */
 				__( 'Enjoyed %1$s? Please leave us a %2$s rating. We really appreciate your support!', 'elementor' ),
-				'<strong>' . __( 'Elementor', 'elementor' ) . '</strong>',
+				'<strong>' . __( 'Classic Elements', 'elementor' ) . '</strong>',
 				'<a href="https://go.elementor.com/admin-review/" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a>'
 			);
 		}
@@ -456,7 +456,7 @@ class Admin extends App {
 	/**
 	 * Register dashboard widgets.
 	 *
-	 * Adds a new Elementor widgets to WordPress dashboard.
+	 * Adds a new Classic Elements widgets to ClassicPress dashboard.
 	 *
 	 * Fired by `wp_dashboard_setup` action.
 	 *
@@ -464,7 +464,7 @@ class Admin extends App {
 	 * @access public
 	 */
 	public function register_dashboard_widgets() {
-		wp_add_dashboard_widget( 'e-dashboard-overview', __( 'Elementor Overview', 'elementor' ), [ $this, 'elementor_dashboard_overview_widget' ] );
+		wp_add_dashboard_widget( 'e-dashboard-overview', __( 'Classic Elements Overview', 'elementor' ), [ $this, 'elementor_dashboard_overview_widget' ] );
 
 		// Move our widget to top.
 		global $wp_meta_boxes;
@@ -513,12 +513,12 @@ class Admin extends App {
 			<div class="e-overview__header">
 				<div class="e-overview__logo"><div class="e-logo-wrapper"><i class="eicon-elementor"></i></div></div>
 				<div class="e-overview__versions">
-					<span class="e-overview__version"><?php echo __( 'Elementor', 'elementor' ); ?> v<?php echo ELEMENTOR_VERSION; ?></span>
+					<span class="e-overview__version"><?php echo __( 'Classic Elements', 'elementor' ); ?> v<?php echo ELEMENTOR_VERSION; ?></span>
 					<?php
 					/**
-					 * Elementor dashboard widget after the version.
+					 * Classic Elements dashboard widget after the version.
 					 *
-					 * Fires after Elementor version display in the dashboard widget.
+					 * Fires after Classic Elements version display in the dashboard widget.
 					 *
 					 * @since 1.9.0
 					 */
@@ -579,9 +579,9 @@ class Admin extends App {
 	}
 
 	/**
-	 * Get elementor dashboard overview widget footer actions.
+	 * Get Classic Elements dashboard overview widget footer actions.
 	 *
-	 * Retrieves the footer action links displayed in elementor dashboard widget.
+	 * Retrieves the footer action links displayed in Classic Elements dashboard widget.
 	 *
 	 * @since 1.9.0
 	 * @access private
@@ -590,32 +590,32 @@ class Admin extends App {
 		$base_actions = [
 			'blog' => [
 				'title' => __( 'Blog', 'elementor' ),
-				'link' => 'https://go.elementor.com/overview-widget-blog/',
+				'link' => 'https://classicelements.page/blog',
 			],
 			'help' => [
 				'title' => __( 'Help', 'elementor' ),
-				'link' => 'https://go.elementor.com/overview-widget-docs/',
+				'link' => 'https://classicelements.page/docs/',
 			],
 		];
 
 		$additions_actions = [
 			'go-pro' => [
 				'title' => __( 'Go Pro', 'elementor' ),
-				'link' => Utils::get_pro_link( 'https://elementor.com/pro/?utm_source=wp-overview-widget&utm_campaign=gopro&utm_medium=wp-dash' ),
+				'link' => Utils::get_pro_link( 'https://classicelements.page/pro/' ),
 			],
 		];
 
 		/**
 		 * Dashboard widget footer actions.
 		 *
-		 * Filters the additions actions displayed in Elementor dashboard widget.
+		 * Filters the additions actions displayed in Classic Elements dashboard widget.
 		 *
-		 * Developers can add new action links to Elementor dashboard widget
+		 * Developers can add new action links to Classic Elements dashboard widget
 		 * footer using this filter.
 		 *
 		 * @since 1.9.0
 		 *
-		 * @param array $additions_actions Elementor dashboard widget footer actions.
+		 * @param array $additions_actions Classic Elements dashboard widget footer actions.
 		 */
 		$additions_actions = apply_filters( 'elementor/admin/dashboard_overview_widget/footer_actions', $additions_actions );
 
@@ -813,8 +813,8 @@ class Admin extends App {
 				'yes' => __( 'Continue', 'elementor' ),
 				'cancel' => __( 'Cancel', 'elementor' ),
 				'new_template' => __( 'New Template', 'elementor' ),
-				'back_to_wordpress_editor_message' => __( 'Please note that you are switching to WordPress default editor. Your current layout, design and content might break.', 'elementor' ),
-				'back_to_wordpress_editor_header' => __( 'Back to WordPress Editor', 'elementor' ),
+				'back_to_wordpress_editor_message' => __( 'Please note that you are switching to ClassicPress default editor. Your current layout, design and content might break.', 'elementor' ),
+				'back_to_wordpress_editor_header' => __( 'Back to ClassicPress Editor', 'elementor' ),
 				'beta_tester_sign_up' => __( 'Sign Up', 'elementor' ),
 				'do_not_show_again' => __( 'Don\'t Show Again', 'elementor' ),
 			],

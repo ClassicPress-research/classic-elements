@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Base Category
  *
- * Base class for Elementor Finder categories.
+ * Base class for Classic Elements Finder categories.
  */
 abstract class Base_Category extends Base_Object {
 

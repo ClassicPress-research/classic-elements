@@ -9,9 +9,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor base tag.
+ * Classic Elements base tag.
  *
- * An abstract class to register new Elementor tags.
+ * An abstract class to register new Classic Elements tags.
  *
  * @since 2.0.0
  * @abstract

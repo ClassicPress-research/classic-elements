@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor image carousel widget.
+ * Classic Elements image carousel widget.
  *
- * Elementor widget that displays a set of images in a rotating carousel or
+ * Classic Elements widget that displays a set of images in a rotating carousel or
  * slider.
  *
  * @since 1.0.0

@@ -10,9 +10,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor global CSS file.
+ * Classic Elements global CSS file.
  *
- * Elementor CSS file handler class is responsible for generating the global CSS
+ * Classic Elements CSS file handler class is responsible for generating the global CSS
  * file.
  *
  * @since 1.2.0
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Global_CSS extends Base {
 
 	/**
-	 * Elementor global CSS file handler ID.
+	 * Classic Elements global CSS file handler ID.
 	 */
 	const FILE_HANDLER_ID = 'elementor-global';
 

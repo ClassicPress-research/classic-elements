@@ -6,10 +6,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor fonts.
+ * Classic Elements fonts.
  *
- * Elementor fonts handler class is responsible for registering the supported
- * fonts used by Elementor.
+ * Classic Elements fonts handler class is responsible for registering the supported
+ * fonts used by Classic Elements.
  *
  * @since 1.0.0
  */
@@ -104,7 +104,7 @@ class Fonts {
 			/**
 			 * Additional fonts.
 			 *
-			 * Filters the fonts used by Elementor to add additional fonts.
+			 * Filters the fonts used by Classic Elements to add additional fonts.
 			 *
 			 * @since 1.9.4
 			 *
@@ -119,7 +119,7 @@ class Fonts {
 	}
 
 	/**
-	 * Get Elementor native fonts.
+	 * Get Classic Elements native fonts.
 	 *
 	 * Retrieve the list of supported fonts.
 	 *

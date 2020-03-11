@@ -10,10 +10,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor settings base manager.
+ * Classic Elements settings base manager.
  *
- * Elementor settings base manager handler class is responsible for registering
- * and managing Elementor settings base managers.
+ * Classic Elements settings base manager handler class is responsible for registering
+ * and managing Classic Elements settings base managers.
  *
  * @since 1.6.0
  * @abstract
@@ -35,7 +35,7 @@ abstract class Manager {
 	/**
 	 * Settings base manager constructor.
 	 *
-	 * Initializing Elementor settings base manager.
+	 * Initializing Classic Elements settings base manager.
 	 *
 	 * @since 1.6.0
 	 * @access public

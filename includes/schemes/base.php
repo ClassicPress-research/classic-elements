@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor scheme base.
+ * Classic Elements scheme base.
  *
  * An abstract class implementing the scheme interface, responsible for
  * creating new schemes.
@@ -102,7 +102,7 @@ abstract class Scheme_Base implements Scheme_Interface {
 	/**
 	 * Save scheme.
 	 *
-	 * Update Elementor scheme in the database, and update the last updated
+	 * Update Classic Elements scheme in the database, and update the last updated
 	 * scheme time.
 	 *
 	 * @since 1.0.0

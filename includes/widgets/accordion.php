@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor accordion widget.
+ * Classic Elements accordion widget.
  *
- * Elementor widget that displays a collapsible display of content in an
+ * Classic Elements widget that displays a collapsible display of content in an
  * accordion style, showing only one item at a time.
  *
  * @since 1.0.0

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: Elementor Safe Mode
+ * Plugin Name: Classic Elements Safe Mode
  * Description: Safe Mode allows you to troubleshoot issues by only loading the editor, without loading the theme or any other plugin.
  * Plugin URI: https://elementor.com/?utm_source=safe-mode&utm_campaign=plugin-uri&utm_medium=wp-dash
  * Author: Elementor.com
@@ -10,15 +10,15 @@
  *
  * Text Domain: elementor
  *
- * @package Elementor
+ * @package Classic Elements
  * @category Safe Mode
  *
- * Elementor is free software: you can redistribute it and/or modify
+ * Classic Elements is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * any later version.
  *
- * Elementor is distributed in the hope that it will be useful,
+ * Classic Elements is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.

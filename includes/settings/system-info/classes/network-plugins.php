@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor network plugins report.
+ * Classic Elements network plugins report.
  *
- * Elementor system report handler class responsible for generating a report for
+ * Classic Elements system report handler class responsible for generating a report for
  * network plugins.
  *
  * @since 1.0.0

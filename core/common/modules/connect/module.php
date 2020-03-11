@@ -77,9 +77,9 @@ class Module extends BaseModule {
 		}
 
 		/**
-		 * Register Elementor apps.
+		 * Register Classic Elements apps.
 		 *
-		 * Fires after Elementor registers the default apps.
+		 * Fires after Classic Elements registers the default apps.
 		 *
 		 * @since 2.3.0
 		 *

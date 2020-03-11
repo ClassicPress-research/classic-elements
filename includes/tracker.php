@@ -8,10 +8,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor tracker.
+ * Classic Elements tracker.
  *
- * Elementor tracker handler class is responsible for sending anonymous plugin
- * data to Elementor servers for users that actively allowed data tracking.
+ * Classic Elements tracker handler class is responsible for sending anonymous plugin
+ * data to Classic Elements servers for users that actively allowed data tracking.
  *
  * @since 1.0.0
  */
@@ -34,7 +34,7 @@ class Tracker {
 	/**
 	 * Init.
 	 *
-	 * Initialize Elementor tracker.
+	 * Initialize Classic Elements tracker.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -200,7 +200,7 @@ class Tracker {
 	/**
 	 * Admin notices.
 	 *
-	 * Add Elementor notices to WordPress admin screen to show tracker notice.
+	 * Add Classic Elements notices to ClassicPress admin screen to show tracker notice.
 	 *
 	 * Fired by `admin_notices` action.
 	 *
@@ -246,7 +246,7 @@ class Tracker {
 		$optin_url = wp_nonce_url( add_query_arg( 'elementor_tracker', 'opt_into' ), 'opt_into' );
 		$optout_url = wp_nonce_url( add_query_arg( 'elementor_tracker', 'opt_out' ), 'opt_out' );
 
-		$tracker_description_text = __( 'Love using Elementor? Become a super contributor by opting in to our anonymous plugin data collection and to our updates. We guarantee no sensitive data is collected.', 'elementor' );
+		$tracker_description_text = __( 'Love using Classic Elements? Become a super contributor by opting in to our anonymous plugin data collection and to our updates. We guarantee no sensitive data is collected.', 'elementor' );
 
 		/**
 		 * Tracker admin description text.
@@ -379,13 +379,13 @@ class Tracker {
 	/**
 	 * Get library usage.
 	 *
-	 * Retrieve the number of Elementor library items saved.
+	 * Retrieve the number of Classic Elements library items saved.
 	 *
 	 * @since 2.0.0
 	 * @access private
 	 * @static
 	 *
-	 * @return array The number of Elementor library items grouped by post types
+	 * @return array The number of Classic Elements library items grouped by post types
 	 *               and meta value.
 	 */
 	private static function get_library_usage() {

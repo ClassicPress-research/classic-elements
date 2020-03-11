@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * App
  *
- * Elementor's common app that groups shared functionality, components and configuration
+ * Classic Elements's common app that groups shared functionality, components and configuration
  *
  * @since 2.3.0
  */

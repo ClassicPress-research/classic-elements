@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor template library import images.
+ * Classic Elements template library import images.
  *
- * Elementor template library import images handler class is responsible for
+ * Classic Elements template library import images handler class is responsible for
  * importing remote images used by the template library.
  *
  * @since 1.0.0
@@ -89,7 +89,7 @@ class Import_Images {
 	/**
 	 * Import image.
 	 *
-	 * Import a single image from a remote server, upload the image WordPress
+	 * Import a single image from a remote server, upload the image ClassicPress
 	 * uploads folder, create a new attachment in the database and updates the
 	 * attachment metadata.
 	 *
@@ -155,7 +155,7 @@ class Import_Images {
 	 * Template library import images constructor.
 	 *
 	 * Initializing the images import class used by the template library through
-	 * the WordPress Filesystem API.
+	 * the ClassicPress Filesystem API.
 	 *
 	 * @since 1.0.0
 	 * @access public

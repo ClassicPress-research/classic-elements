@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor page library document.
+ * Classic Elements page library document.
  *
- * Elementor page library document handler class is responsible for
+ * Classic Elements page library document handler class is responsible for
  * handling a document of a page type.
  *
  * @since 2.0.0

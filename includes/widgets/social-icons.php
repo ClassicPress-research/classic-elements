@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor social icons widget.
+ * Classic Elements social icons widget.
  *
- * Elementor widget that displays icons to social pages like Facebook and Twitter.
+ * Classic Elements widget that displays icons to social pages like Facebook and Twitter.
  *
  * @since 1.0.0
  */

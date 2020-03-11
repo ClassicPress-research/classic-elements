@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor Page Builder cli tools.
+ * Classic Elements Page Builder cli tools.
  */
 class Update extends \WP_CLI_Command {
 

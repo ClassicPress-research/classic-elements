@@ -6,10 +6,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor settings controls.
+ * Classic Elements settings controls.
  *
- * Elementor settings controls handler class responsible for creating the final
- * HTML for various input field types used in Elementor settings pages.
+ * Classic Elements settings controls handler class responsible for creating the final
+ * HTML for various input field types used in Classic Elements settings pages.
  *
  * @since 1.0.0
  */

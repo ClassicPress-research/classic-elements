@@ -13,9 +13,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor template library manager.
+ * Classic Elements template library manager.
  *
- * Elementor template library manager handler class is responsible for
+ * Classic Elements template library manager handler class is responsible for
  * initializing the template library.
  *
  * @since 1.0.0

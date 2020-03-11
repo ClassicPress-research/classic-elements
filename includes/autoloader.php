@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor autoloader.
+ * Classic Elements autoloader.
  *
- * Elementor autoloader handler class is responsible for loading the different
+ * Classic Elements autoloader handler class is responsible for loading the different
  * classes needed to run the plugin.
  *
  * @since 1.6.0
@@ -18,7 +18,7 @@ class Autoloader {
 	/**
 	 * Classes map.
 	 *
-	 * Maps Elementor classes to file names.
+	 * Maps Classic Elements classes to file names.
 	 *
 	 * @since 1.6.0
 	 * @access private
@@ -31,7 +31,7 @@ class Autoloader {
 	/**
 	 * Classes aliases.
 	 *
-	 * Maps Elementor classes to aliases.
+	 * Maps Classic Elements classes to aliases.
 	 *
 	 * @since 1.6.0
 	 * @access private

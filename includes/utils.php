@@ -6,10 +6,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor utils.
+ * Classic Elements utils.
  *
- * Elementor utils handler class is responsible for different utility methods
- * used by Elementor.
+ * Classic Elements utils handler class is responsible for different utility methods
+ * used by Classic Elements.
  *
  * @since 1.0.0
  */
@@ -20,7 +20,7 @@ class Utils {
 	/**
 	 * Is ajax.
 	 *
-	 * Whether the current request is a WordPress ajax request.
+	 * Whether the current request is a ClassicPress ajax request.
 	 *
 	 * @since 1.0.0
 	 * @deprecated 2.6.0 Use `wp_doing_ajax()` instead.
@@ -53,7 +53,7 @@ class Utils {
 	/**
 	 * Get edit link.
 	 *
-	 * Retrieve Elementor edit link.
+	 * Retrieve Classic Elements edit link.
 	 *
 	 * @since 1.0.0
 	 * @deprecated 2.0.0 Use `Plugin::$instance->documents->get( $post_id )->get_edit_url()` method instead.
@@ -82,7 +82,7 @@ class Utils {
 		/**
 		 * Get edit link.
 		 *
-		 * Filters the Elementor edit link.
+		 * Filters the Classic Elements edit link.
 		 *
 		 * @since 1.0.0
 		 * @deprecated 2.0.0 Use `elementor/document/urls/edit` filter instead.
@@ -98,15 +98,15 @@ class Utils {
 	/**
 	 * Get pro link.
 	 *
-	 * Retrieve the link to Elementor Pro.
+	 * Retrieve the link to Classic Elements Pro.
 	 *
 	 * @since 1.7.0
 	 * @access public
 	 * @static
 	 *
-	 * @param string $link URL to Elementor pro.
+	 * @param string $link URL to Classic Elements pro.
 	 *
-	 * @return string Elementor pro link.
+	 * @return string Classic Elements pro link.
 	 */
 	public static function get_pro_link( $link ) {
 		static $theme_name = false;
@@ -150,7 +150,7 @@ class Utils {
 		/**
 		 * Preview URL.
 		 *
-		 * Filters the Elementor preview URL.
+		 * Filters the Classic Elements preview URL.
 		 *
 		 * @since 1.6.4
 		 * @deprecated 2.0.0 Use `elementor/document/urls/preview` filter instead.
@@ -164,9 +164,9 @@ class Utils {
 	}
 
 	/**
-	 * Get WordPress preview url.
+	 * Get ClassicPress preview url.
 	 *
-	 * Retrieve WordPress preview URL for any given post ID.
+	 * Retrieve ClassicPress preview URL for any given post ID.
 	 *
 	 * @since 1.9.0
 	 * @deprecated 2.0.0 Use `Plugin::$instance->documents->get( $post_id )->get_wp_preview_url()` method instead.
@@ -184,9 +184,9 @@ class Utils {
 		$wp_preview_url = Plugin::$instance->documents->get( $post_id )->get_wp_preview_url();
 
 		/**
-		 * WordPress preview URL.
+		 * ClassicPress preview URL.
 		 *
-		 * Filters the WordPress preview URL.
+		 * Filters the ClassicPress preview URL.
 		 *
 		 * @since 1.9.0
 		 * @deprecated 2.0.0 Use `elementor/document/urls/wp_preview` filter instead.
@@ -202,7 +202,7 @@ class Utils {
 	/**
 	 * Replace URLs.
 	 *
-	 * Replace old URLs to new URLs. This method also updates all the Elementor data.
+	 * Replace old URLs to new URLs. This method also updates all the Classic Elements data.
 	 *
 	 * @since 2.1.0
 	 * @static
@@ -252,7 +252,7 @@ class Utils {
 	/**
 	 * Get exit to dashboard URL.
 	 *
-	 * Retrieve WordPress preview URL for any given post ID.
+	 * Retrieve ClassicPress preview URL for any given post ID.
 	 *
 	 * @since 1.9.0
 	 * @deprecated 2.0.0 Use `Plugin::$instance->documents->get( $post_id )->get_exit_to_dashboard_url()` method instead.
@@ -271,9 +271,9 @@ class Utils {
 	}
 
 	/**
-	 * Is post supports Elementor.
+	 * Is post supports Classic Elements.
 	 *
-	 * Whether the post supports editing with Elementor.
+	 * Whether the post supports editing with Classic Elements.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -281,7 +281,7 @@ class Utils {
 	 *
 	 * @param int $post_id Optional. Post ID. Default is `0`.
 	 *
-	 * @return string True if post supports editing with Elementor, false otherwise.
+	 * @return string True if post supports editing with Classic Elements, false otherwise.
 	 */
 	public static function is_post_support( $post_id = 0 ) {
 		$post_type = get_post_type( $post_id );
@@ -305,11 +305,11 @@ class Utils {
 		/**
 		 * Is post support.
 		 *
-		 * Filters whether the post supports editing with Elementor.
+		 * Filters whether the post supports editing with Classic Elements.
 		 *
 		 * @since 2.2.0
 		 *
-		 * @param bool $is_supported Whether the post type supports editing with Elementor.
+		 * @param bool $is_supported Whether the post type supports editing with Classic Elements.
 		 * @param int $post_id Post ID.
 		 * @param string $post_type Post type.
 		 */
@@ -320,9 +320,9 @@ class Utils {
 
 
 	/**
-	 * Is post type supports Elementor.
+	 * Is post type supports Classic Elements.
 	 *
-	 * Whether the post type supports editing with Elementor.
+	 * Whether the post type supports editing with Classic Elements.
 	 *
 	 * @since 2.2.0
 	 * @access public
@@ -353,7 +353,7 @@ class Utils {
 	 * @access public
 	 * @static
 	 *
-	 * @return string The source of the default placeholder image used by Elementor.
+	 * @return string The source of the default placeholder image used by Classic Elements.
 	 */
 	public static function get_placeholder_image_src() {
 		$placeholder_image = ELEMENTOR_ASSETS_URL . 'images/placeholder.png';
@@ -361,7 +361,7 @@ class Utils {
 		/**
 		 * Get placeholder image source.
 		 *
-		 * Filters the source of the default placeholder image used by Elementor.
+		 * Filters the source of the default placeholder image used by Classic Elements.
 		 *
 		 * @since 1.0.0
 		 *
@@ -424,7 +424,7 @@ class Utils {
 	/**
 	 * Get timezone string.
 	 *
-	 * Retrieve timezone string from the WordPress database.
+	 * Retrieve timezone string from the ClassicPress database.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -474,7 +474,7 @@ class Utils {
 	/**
 	 * Get create new post URL.
 	 *
-	 * Retrieve a custom URL for creating a new post/page using Elementor.
+	 * Retrieve a custom URL for creating a new post/page using Classic Elements.
 	 *
 	 * @since 1.9.0
 	 * @access public
@@ -482,7 +482,7 @@ class Utils {
 	 *
 	 * @param string $post_type Optional. Post type slug. Default is 'page'.
 	 *
-	 * @return string A URL for creating new post using Elementor.
+	 * @return string A URL for creating new post using Classic Elements.
 	 */
 	public static function get_create_new_post_url( $post_type = 'page' ) {
 		$new_post_url = add_query_arg( [
@@ -589,7 +589,7 @@ class Utils {
 		/**
 		 * Viewport meta tag.
 		 *
-		 * Filters the Elementor preview URL.
+		 * Filters the Classic Elements preview URL.
 		 *
 		 * @since 2.5.0
 		 *
@@ -599,7 +599,7 @@ class Utils {
 	}
 
 	/**
-	 * Add Elementor Config js vars to the relevant script handle,
+	 * Add Classic Elements Config js vars to the relevant script handle,
 	 * WP will wrap it with <script> tag.
 	 * To make sure this script runs thru the `script_loader_tag` hook, use a known handle value.
 	 * @param string $handle

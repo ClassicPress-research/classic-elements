@@ -10,9 +10,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor post CSS file.
+ * Classic Elements post CSS file.
  *
- * Elementor CSS file handler class is responsible for generating the single
+ * Classic Elements CSS file handler class is responsible for generating the single
  * post CSS file.
  *
  * @since 1.2.0
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Post extends Base {
 
 	/**
-	 * Elementor post CSS file prefix.
+	 * Classic Elements post CSS file prefix.
 	 */
 	const FILE_PREFIX = 'post-';
 

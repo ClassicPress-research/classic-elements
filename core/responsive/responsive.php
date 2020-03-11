@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor responsive.
+ * Classic Elements responsive.
  *
- * Elementor responsive handler class is responsible for setting up Elementor
+ * Classic Elements responsive handler class is responsible for setting up Classic Elements
  * responsive breakpoints.
  *
  * @since 1.0.0
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Responsive {
 
 	/**
-	 * The Elementor breakpoint prefix.
+	 * The Classic Elements breakpoint prefix.
 	 */
 	const BREAKPOINT_OPTION_PREFIX = 'elementor_viewport_';
 

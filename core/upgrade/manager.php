@@ -31,11 +31,11 @@ class Manager extends DB_Upgrades_Manager {
 	}
 
 	public function get_plugin_label() {
-		return __( 'Elementor', 'elementor' );
+		return __( 'Classic Elements', 'elementor' );
 	}
 
 	public function get_updater_label() {
-		return sprintf( '<strong>%s </strong> &#8211;', __( 'Elementor Data Updater', 'elementor' ) );
+		return sprintf( '<strong>%s </strong> &#8211;', __( 'Classic Elements Data Updater', 'elementor' ) );
 	}
 
 	public function get_new_version() {

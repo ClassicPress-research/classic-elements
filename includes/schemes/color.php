@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor color scheme.
+ * Classic Elements color scheme.
  *
- * Elementor color scheme class is responsible for initializing a scheme for
+ * Classic Elements color scheme class is responsible for initializing a scheme for
  * colors.
  *
  * @since 1.0.0

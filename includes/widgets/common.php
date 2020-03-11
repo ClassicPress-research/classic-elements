@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor common widget.
+ * Classic Elements common widget.
  *
- * Elementor base widget that gives you all the advanced options of the basic
+ * Classic Elements base widget that gives you all the advanced options of the basic
  * widget.
  *
  * @since 1.0.0

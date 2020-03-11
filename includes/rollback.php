@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor rollback.
+ * Classic Elements rollback.
  *
- * Elementor rollback handler class is responsible for rolling back Elementor to
+ * Classic Elements rollback handler class is responsible for rolling back Classic Elements to
  * previous version.
  *
  * @since 1.5.0
@@ -66,7 +66,7 @@ class Rollback {
 	/**
 	 * Rollback constructor.
 	 *
-	 * Initializing Elementor rollback.
+	 * Initializing Classic Elements rollback.
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -118,7 +118,7 @@ class Rollback {
 	/**
 	 * Apply package.
 	 *
-	 * Change the plugin data when WordPress checks for updates. This method
+	 * Change the plugin data when ClassicPress checks for updates. This method
 	 * modifies package data to update the plugin from a specific URL containing
 	 * the version package.
 	 *
@@ -148,7 +148,7 @@ class Rollback {
 	/**
 	 * Upgrade.
 	 *
-	 * Run WordPress upgrade to rollback Elementor to previous version.
+	 * Run ClassicPress upgrade to rollback Classic Elements to previous version.
 	 *
 	 * @since 1.5.0
 	 * @access protected
@@ -162,7 +162,7 @@ class Rollback {
 			'url' => 'update.php?action=upgrade-plugin&plugin=' . rawurlencode( $this->plugin_name ),
 			'plugin' => $this->plugin_name,
 			'nonce' => 'upgrade-plugin_' . $this->plugin_name,
-			'title' => '<img src="' . $logo_url . '" alt="Elementor">' . __( 'Rollback to Previous Version', 'elementor' ),
+			'title' => '<img src="' . $logo_url . '" alt="Classic Elements">' . __( 'Rollback to Previous Version', 'elementor' ),
 		];
 
 		$this->print_inline_style();
@@ -174,7 +174,7 @@ class Rollback {
 	/**
 	 * Run.
 	 *
-	 * Rollback Elementor to previous versions.
+	 * Rollback Classic Elements to previous versions.
 	 *
 	 * @since 1.5.0
 	 * @access public

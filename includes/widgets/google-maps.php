@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor google maps widget.
+ * Classic Elements google maps widget.
  *
- * Elementor widget that displays an embedded google map.
+ * Classic Elements widget that displays an embedded google map.
  *
  * @since 1.0.0
  */

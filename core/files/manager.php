@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor files manager.
+ * Classic Elements files manager.
  *
- * Elementor files manager handler class is responsible for creating files.
+ * Classic Elements files manager handler class is responsible for creating files.
  *
  * @since 1.2.0
  */
@@ -25,7 +25,7 @@ class Manager {
 	/**
 	 * Files manager constructor.
 	 *
-	 * Initializing the Elementor files manager.
+	 * Initializing the Classic Elements files manager.
 	 *
 	 * @since 1.2.0
 	 * @access public
@@ -116,9 +116,9 @@ class Manager {
 		}
 
 		/**
-		 * Elementor clear files.
+		 * Classic Elements clear files.
 		 *
-		 * Fires after Elementor clears files
+		 * Fires after Classic Elements clears files
 		 *
 		 * @since 2.1.0
 		 */

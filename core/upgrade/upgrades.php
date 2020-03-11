@@ -10,17 +10,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor upgrades.
+ * Classic Elements upgrades.
  *
- * Elementor upgrades handler class is responsible for updating different
- * Elementor versions.
+ * Classic Elements upgrades handler class is responsible for updating different
+ * Classic Elements versions.
  *
  * @since 1.0.0
  */
 class Upgrades {
 
 	/**
-	 * Upgrade Elementor 0.3.2
+	 * Upgrade Classic Elements 0.3.2
 	 *
 	 * Change the image widget link URL, setting is to `custom` link.
 	 *
@@ -73,7 +73,7 @@ class Upgrades {
 	}
 
 	/**
-	 * Upgrade Elementor 0.9.2
+	 * Upgrade Classic Elements 0.9.2
 	 *
 	 * Change the icon widget, icon-box widget and the social-icons widget,
 	 * setting their icon padding size to an empty string.
@@ -138,7 +138,7 @@ class Upgrades {
 	}
 
 	/**
-	 * Upgrade Elementor 0.11.0
+	 * Upgrade Classic Elements 0.11.0
 	 *
 	 * Change the button widget sizes, setting up new button sizes.
 	 *
@@ -206,7 +206,7 @@ class Upgrades {
 	}
 
 	/**
-	 * Upgrade Elementor 2.0.0
+	 * Upgrade Classic Elements 2.0.0
 	 *
 	 * Fix post titles for old autosave drafts that saved with the format 'Auto Save 2018-03-18 17:24'.
 	 *
@@ -239,7 +239,7 @@ class Upgrades {
 	}
 
 	/**
-	 * Upgrade Elementor 2.0.1
+	 * Upgrade Classic Elements 2.0.1
 	 *
 	 * Fix post titles for old autosave drafts that saved with the format 'Auto Save...'.
 	 *
@@ -275,7 +275,7 @@ class Upgrades {
 	}
 
 	/**
-	 * Upgrade Elementor 2.0.10
+	 * Upgrade Classic Elements 2.0.10
 	 *
 	 * Fix post titles for old autosave drafts that saved with the format 'Auto Save...'.
 	 * Fix also Translated titles.

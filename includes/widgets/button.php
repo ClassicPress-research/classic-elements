@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor button widget.
+ * Classic Elements button widget.
  *
- * Elementor widget that displays a button with the ability to control every
+ * Classic Elements widget that displays a button with the ability to control every
  * aspect of the button design.
  *
  * @since 1.0.0

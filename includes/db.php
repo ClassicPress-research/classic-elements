@@ -8,10 +8,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor database.
+ * Classic Elements database.
  *
- * Elementor database handler class is responsible for communicating with the
- * DB, save and retrieve Elementor data and meta data.
+ * Classic Elements database handler class is responsible for communicating with the
+ * DB, save and retrieve Classic Elements data and meta data.
  *
  * @since 1.0.0
  */
@@ -212,9 +212,9 @@ class DB {
 	}
 
 	/**
-	 * Get new editor from WordPress editor.
+	 * Get new editor from ClassicPress editor.
 	 *
-	 * When editing the with Elementor the first time, the current page content
+	 * When editing the with Classic Elements the first time, the current page content
 	 * is parsed into Text Editor Widget that contains the original data.
 	 *
 	 * @since 2.1.0
@@ -223,7 +223,7 @@ class DB {
 	 *
 	 * @param int $post_id Post ID.
 	 *
-	 * @return array Content in Elementor format.
+	 * @return array Content in Classic Elements format.
 	 */
 	public function get_new_editor_from_wp_editor( $post_id ) {
 		 _deprecated_function( __METHOD__, '2.3.0', 'Plugin::$instance->documents->get( $post_id )->convert_to_elementor()' );
@@ -238,9 +238,9 @@ class DB {
 	}
 
 	/**
-	 * Get new editor from WordPress editor.
+	 * Get new editor from ClassicPress editor.
 	 *
-	 * When editing the with Elementor the first time, the current page content
+	 * When editing the with Classic Elements the first time, the current page content
 	 * is parsed into Text Editor Widget that contains the original data.
 	 *
 	 * @since 1.0.0
@@ -249,7 +249,7 @@ class DB {
 	 *
 	 * @param int $post_id Post ID.
 	 *
-	 * @return array Content in Elementor format.
+	 * @return array Content in Classic Elements format.
 	 */
 	public function _get_new_editor_from_wp_editor( $post_id ) {
 		_deprecated_function( __METHOD__, '2.1.0', 'Plugin::$instance->documents->get( $post_id )->convert_to_elementor()' );
@@ -258,15 +258,15 @@ class DB {
 	}
 
 	/**
-	 * Is using Elementor.
+	 * Is using Classic Elements.
 	 *
-	 * Set whether the page is using Elementor or not.
+	 * Set whether the page is using Classic Elements or not.
 	 *
 	 * @since 1.5.0
 	 * @access public
 	 *
 	 * @param int  $post_id      Post ID.
-	 * @param bool $is_elementor Optional. Whether the page is elementor page.
+	 * @param bool $is_elementor Optional. Whether the page is Classic Elements page.
 	 *                           Default is true.
 	 */
 	public function set_is_elementor_page( $post_id, $is_elementor = true ) {
@@ -339,13 +339,13 @@ class DB {
 	/**
 	 * Iterate data.
 	 *
-	 * Accept any type of Elementor data and a callback function. The callback
+	 * Accept any type of Classic Elements data and a callback function. The callback
 	 * function runs recursively for each element and his child elements.
 	 *
 	 * @since 1.0.0
 	 * @access public
 	 *
-	 * @param array    $data_container Any type of elementor data.
+	 * @param array    $data_container Any type of Classic Elements data.
 	 * @param callable $callback       A function to iterate data by.
 	 * @param array    $args           Array of args pointers for passing parameters in & out of the callback
 	 *
@@ -374,10 +374,10 @@ class DB {
 	}
 
 	/**
-	 * Safely copy Elementor meta.
+	 * Safely copy Classic Elements meta.
 	 *
-	 * Make sure the original page was built with Elementor and the post is not
-	 * auto-save. Only then copy elementor meta from one post to another using
+	 * Make sure the original page was built with Classic Elements and the post is not
+	 * auto-save. Only then copy Classic Elements meta from one post to another using
 	 * `copy_elementor_meta()`.
 	 *
 	 * @since 1.9.2
@@ -387,14 +387,14 @@ class DB {
 	 * @param int $to_post_id   Target post ID.
 	 */
 	public function safe_copy_elementor_meta( $from_post_id, $to_post_id ) {
-		// It's from  WP-Admin & not from Elementor.
+		// It's from  WP-Admin & not from Classic Elements.
 		if ( ! did_action( 'elementor/db/before_save' ) ) {
 
 			if ( ! Plugin::$instance->db->is_built_with_elementor( $from_post_id ) ) {
 				return;
 			}
 
-			// It's an exited Elementor auto-save
+			// It's an exited Classic Elements auto-save
 			if ( get_post_meta( $to_post_id, '_elementor_data', true ) ) {
 				return;
 			}
@@ -404,7 +404,7 @@ class DB {
 	}
 
 	/**
-	 * Copy Elementor meta.
+	 * Copy Classic Elements meta.
 	 *
 	 * Duplicate the data from one post to another.
 	 *
@@ -428,7 +428,7 @@ class DB {
 			if ( 0 === strpos( $meta_key, '_elementor' ) || in_array( $meta_key, $core_meta, true ) ) {
 				$value = $values[0];
 
-				// The elementor JSON needs slashes before saving
+				// The Classic Elements JSON needs slashes before saving
 				if ( '_elementor_data' === $meta_key ) {
 					$value = wp_slash( $value );
 				} else {
@@ -442,16 +442,16 @@ class DB {
 	}
 
 	/**
-	 * Is built with Elementor.
+	 * Is built with Classic Elements.
 	 *
-	 * Check whether the post was built with Elementor.
+	 * Check whether the post was built with Classic Elements.
 	 *
 	 * @since 1.0.10
 	 * @access public
 	 *
 	 * @param int $post_id Post ID.
 	 *
-	 * @return bool Whether the post was built with Elementor.
+	 * @return bool Whether the post was built with Classic Elements.
 	 */
 	public function is_built_with_elementor( $post_id ) {
 		return ! ! get_post_meta( $post_id, '_elementor_edit_mode', true );
@@ -460,7 +460,7 @@ class DB {
 	/**
 	 * Switch to post.
 	 *
-	 * Change the global WordPress post to the requested post.
+	 * Change the global ClassicPress post to the requested post.
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -516,7 +516,7 @@ class DB {
 	/**
 	 * Switch to query.
 	 *
-	 * Change the WordPress query to a new query with the requested
+	 * Change the ClassicPress query to a new query with the requested
 	 * query variables.
 	 *
 	 * @since 2.0.0
@@ -621,7 +621,7 @@ class DB {
 	/**
 	 * Get plain text from data.
 	 *
-	 * Retrieve the post plain text from any given Elementor data.
+	 * Retrieve the post plain text from any given Classic Elements data.
 	 *
 	 * @since 1.9.2
 	 * @access public

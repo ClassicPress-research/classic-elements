@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor section library document.
+ * Classic Elements section library document.
  *
- * Elementor section library document handler class is responsible for
+ * Classic Elements section library document handler class is responsible for
  * handling a document of a section type.
  *
  */

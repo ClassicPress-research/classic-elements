@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor icon list widget.
+ * Classic Elements icon list widget.
  *
- * Elementor widget that displays a bullet list with any chosen icons and texts.
+ * Classic Elements widget that displays a bullet list with any chosen icons and texts.
  *
  * @since 1.0.0
  */

@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor tabs widget.
+ * Classic Elements tabs widget.
  *
- * Elementor widget that displays vertical or horizontal tabs with different
+ * Classic Elements widget that displays vertical or horizontal tabs with different
  * pieces of content.
  *
  * @since 1.0.0

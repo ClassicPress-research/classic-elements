@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor image widget.
+ * Classic Elements image widget.
  *
- * Elementor widget that displays an image into the page.
+ * Classic Elements widget that displays an image into the page.
  *
  * @since 1.0.0
  */

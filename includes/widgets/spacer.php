@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor spacer widget.
+ * Classic Elements spacer widget.
  *
- * Elementor widget that inserts a space that divides various elements.
+ * Classic Elements widget that inserts a space that divides various elements.
  *
  * @since 1.0.0
  */

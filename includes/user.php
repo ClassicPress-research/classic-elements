@@ -8,10 +8,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor user.
+ * Classic Elements user.
  *
- * Elementor user handler class is responsible for checking if the user can edit
- * with Elementor and displaying different admin notices.
+ * Classic Elements user handler class is responsible for checking if the user can edit
+ * with Classic Elements and displaying different admin notices.
  *
  * @since 1.0.0
  */
@@ -41,7 +41,7 @@ class User {
 	/**
 	 * Init.
 	 *
-	 * Initialize Elementor user.
+	 * Initialize Classic Elements user.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -111,9 +111,9 @@ class User {
 	}
 
 	/**
-	 * Is current user can access elementor.
+	 * Is current user can access Classic Elements.
 	 *
-	 * Whether the current user role is not excluded by Elementor Settings.
+	 * Whether the current user role is not excluded by Classic Elements Settings.
 	 *
 	 * @since 2.1.7
 	 * @access public
