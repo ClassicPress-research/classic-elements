@@ -8,10 +8,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor settings manager.
+ * Classic Elements settings manager.
  *
- * Elementor settings manager handler class is responsible for registering and
- * managing Elementor settings managers.
+ * Classic Elements settings manager handler class is responsible for registering and
+ * managing Classic Elements settings managers.
  *
  * @since 1.6.0
  */
@@ -32,7 +32,7 @@ class Manager {
 	/**
 	 * Builtin settings managers names.
 	 *
-	 * Holds the names for builtin Elementor settings managers.
+	 * Holds the names for builtin Classic Elements settings managers.
 	 *
 	 * @since 1.6.0
 	 * @access private

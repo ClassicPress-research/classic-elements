@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor WordPress widget.
+ * Classic Elements WordPress widget.
  *
- * Elementor widget that displays all the WordPress widgets.
+ * Classic Elements widget that displays all the WordPress widgets.
  *
  * @since 1.0.0
  */

@@ -9,10 +9,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor global settings model.
+ * Classic Elements global settings model.
  *
- * Elementor global settings model handler class is responsible for registering
- * and managing Elementor global settings models.
+ * Classic Elements global settings model handler class is responsible for registering
+ * and managing Classic Elements global settings models.
  *
  * @since 1.6.0
  */

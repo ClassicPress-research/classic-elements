@@ -8,10 +8,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor modules manager.
+ * Classic Elements modules manager.
  *
- * Elementor modules manager handler class is responsible for registering and
- * managing Elementor modules.
+ * Classic Elements modules manager handler class is responsible for registering and
+ * managing Classic Elements modules.
  *
  * @since 1.6.0
  */
@@ -32,7 +32,7 @@ class Modules_Manager {
 	/**
 	 * Modules manager constructor.
 	 *
-	 * Initializing the Elementor modules manager.
+	 * Initializing the Classic Elements modules manager.
 	 *
 	 * @since 1.6.0
 	 * @access public

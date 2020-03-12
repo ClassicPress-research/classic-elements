@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor settings validations.
+ * Classic Elements settings validations.
  *
- * Elementor settings validations handler class is responsible for validating settings
+ * Classic Elements settings validations handler class is responsible for validating settings
  * fields.
  *
  * @since 1.0.0

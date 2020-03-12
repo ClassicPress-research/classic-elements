@@ -12,10 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor general settings manager.
+ * Classic Elements general settings manager.
  *
- * Elementor general settings manager handler class is responsible for registering
- * and managing Elementor general settings managers.
+ * Classic Elements general settings manager handler class is responsible for registering
+ * and managing Classic Elements general settings managers.
  *
  * @since 1.6.0
  */
@@ -34,7 +34,7 @@ class Manager extends BaseManager {
 	/**
 	 * General settings manager constructor.
 	 *
-	 * Initializing Elementor general settings manager.
+	 * Initializing Classic Elements general settings manager.
 	 *
 	 * @since 1.6.0
 	 * @access public

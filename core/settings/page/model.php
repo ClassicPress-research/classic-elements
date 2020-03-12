@@ -9,10 +9,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor page settings model.
+ * Classic Elements page settings model.
  *
- * Elementor page settings model handler class is responsible for registering
- * and managing Elementor page settings models.
+ * Classic Elements page settings model handler class is responsible for registering
+ * and managing Classic Elements page settings models.
  *
  * @since 1.6.0
  */
@@ -38,7 +38,7 @@ class Model extends BaseModel {
 	/**
 	 * Model constructor.
 	 *
-	 * Initializing Elementor page settings model.
+	 * Initializing Classic Elements page settings model.
 	 *
 	 * @since 1.6.0
 	 * @access public

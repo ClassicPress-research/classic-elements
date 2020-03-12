@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor icon box widget.
+ * Classic Elements icon box widget.
  *
- * Elementor widget that displays an icon, a headline and a text.
+ * Classic Elements widget that displays an icon, a headline and a text.
  *
  * @since 1.0.0
  */

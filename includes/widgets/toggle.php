@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor toggle widget.
+ * Classic Elements toggle widget.
  *
- * Elementor widget that displays a collapsible display of content in an toggle
+ * Classic Elements widget that displays a collapsible display of content in an toggle
  * style, allowing the user to open multiple items.
  *
  * @since 1.0.0

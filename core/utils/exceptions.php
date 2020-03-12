@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor exceptions.
+ * Classic Elements exceptions.
  *
- * Elementor exceptions handler class is responsible for handling exceptions.
+ * Classic Elements exceptions handler class is responsible for handling exceptions.
  *
  * @since 2.0.0
  */

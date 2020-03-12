@@ -6,10 +6,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor beta testers.
+ * Classic Elements beta testers.
  *
- * Elementor beta testers handler class is responsible for the Beta Testers
- * feature that allows developers to test Elementor beta versions.
+ * Classic Elements beta testers handler class is responsible for the Beta Testers
+ * feature that allows developers to test Classic Elements beta versions.
  *
  * @since 1.5.0
  */
@@ -24,7 +24,7 @@ class Beta_Testers {
 	/**
 	 * Transient key.
 	 *
-	 * Holds the Elementor beta testers transient key.
+	 * Holds the Classic Elements beta testers transient key.
 	 *
 	 * @since 1.5.0
 	 * @access private
@@ -37,7 +37,7 @@ class Beta_Testers {
 	/**
 	 * Get beta version.
 	 *
-	 * Retrieve Elementor beta version from wp.org plugin repository.
+	 * Retrieve Classic Elements beta version from wp.org plugin repository.
 	 *
 	 * @since 1.5.0
 	 * @access private
@@ -70,7 +70,7 @@ class Beta_Testers {
 	 *
 	 * Checks whether a beta version exist, and retrieve the version data.
 	 *
-	 * Fired by `pre_set_site_transient_update_plugins` filter, before WordPress
+	 * Fired by `pre_set_site_transient_update_plugins` filter, before ClassicPress
 	 * runs the plugin update checker.
 	 *
 	 * @since 1.5.0

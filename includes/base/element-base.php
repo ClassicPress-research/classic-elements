@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor element base.
+ * Classic Elements element base.
  *
- * An abstract class to register new Elementor elements. It extended the
+ * An abstract class to register new Classic Elements elements. It extended the
  * `Controls_Stack` class to inherit its properties.
  *
  * This abstract class must be extended in order to register new elements.
@@ -45,7 +45,7 @@ abstract class Element_Base extends Controls_Stack {
 	 * Element default arguments.
 	 *
 	 * Holds all the default arguments of the element. Used to store additional
-	 * data. For example WordPress widgets use this to store widget names.
+	 * data. For example ClassicPress widgets use this to store widget names.
 	 *
 	 * @access private
 	 *
@@ -567,7 +567,7 @@ abstract class Element_Base extends Controls_Stack {
 		/**
 		 * Before frontend element render.
 		 *
-		 * Fires before Elementor element is rendered in the frontend.
+		 * Fires before Classic Elements element is rendered in the frontend.
 		 *
 		 * @since 2.2.0
 		 *
@@ -578,7 +578,7 @@ abstract class Element_Base extends Controls_Stack {
 		/**
 		 * Before frontend element render.
 		 *
-		 * Fires before Elementor element is rendered in the frontend.
+		 * Fires before Classic Elements element is rendered in the frontend.
 		 *
 		 * The dynamic portion of the hook name, `$element_type`, refers to the element type.
 		 *
@@ -620,7 +620,7 @@ abstract class Element_Base extends Controls_Stack {
 		/**
 		 * After frontend element render.
 		 *
-		 * Fires after Elementor element is rendered in the frontend.
+		 * Fires after Classic Elements element is rendered in the frontend.
 		 *
 		 * The dynamic portion of the hook name, `$element_type`, refers to the element type.
 		 *
@@ -908,7 +908,7 @@ abstract class Element_Base extends Controls_Stack {
 	 * Initializing the element base class using `$data` and `$args`.
 	 *
 	 * The `$data` parameter is required for a normal instance because of the
-	 * way Elementor renders data when initializing elements.
+	 * way Classic Elements renders data when initializing elements.
 	 *
 	 * @since 1.0.0
 	 * @access public

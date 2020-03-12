@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor Log reporter.
+ * Classic Elements Log reporter.
  *
- * Elementor log reporter handler class is responsible for generating the
+ * Classic Elements log reporter handler class is responsible for generating the
  * debug reports.
  *
  * @since 2.4.0

@@ -1,23 +1,23 @@
 <?php
 /**
- * Plugin Name: Elementor
+ * Plugin Name: Classic Elements
  * Description: The most advanced frontend drag & drop page builder. Create high-end, pixel perfect websites at record speeds. Any theme, any page, any design.
- * Plugin URI: https://elementor.com/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash
- * Author: Elementor.com
+ * Plugin URI: https://github.com/ClassicPress-research/classic-elementor
+ * Author: Classic Elements
  * Version: 99.2-upstream2.7.6
- * Author URI: https://elementor.com/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash
+ * Author URI: https://github.com/ClassicPress-research/classic-elementor
  *
  * Text Domain: elementor
  *
- * @package Elementor
+ * @package Classic Elements
  * @category Core
  *
- * Elementor is free software: you can redistribute it and/or modify
+ * Classic Elements is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * any later version.
  *
- * Elementor is distributed in the hope that it will be useful,
+ * Classic Elements is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
@@ -55,7 +55,7 @@ if ( ! version_compare( PHP_VERSION, '5.4', '>=' ) ) {
 }
 
 /**
- * Load Elementor textdomain.
+ * Load Classic Elements textdomain.
  *
  * Load gettext translate for Elementor text domain.
  *
@@ -68,7 +68,7 @@ function elementor_load_plugin_textdomain() {
 }
 
 /**
- * Elementor admin notice for minimum PHP version.
+ * Classic Elements admin notice for minimum PHP version.
  *
  * Warning when the site doesn't have the minimum required PHP version.
  *
@@ -78,13 +78,13 @@ function elementor_load_plugin_textdomain() {
  */
 function elementor_fail_php_version() {
 	/* translators: %s: PHP version */
-	$message = sprintf( esc_html__( 'Elementor requires PHP version %s+, plugin is currently NOT RUNNING.', 'elementor' ), '5.4' );
+	$message = sprintf( esc_html__( 'Classic Elements requires PHP version %s+, plugin is currently NOT RUNNING.', 'elementor' ), '5.4' );
 	$html_message = sprintf( '<div class="error">%s</div>', wpautop( $message ) );
 	echo wp_kses_post( $html_message );
 }
 
 /**
- * Elementor admin notice for minimum WordPress version.
+ * Classic Elements admin notice for minimum WordPress version.
  *
  * Warning when the site doesn't have the minimum required WordPress version.
  *
@@ -94,7 +94,7 @@ function elementor_fail_php_version() {
  */
 function elementor_fail_wp_version() {
 	/* translators: %s: WordPress version */
-	$message = sprintf( esc_html__( 'Elementor requires WordPress version %s+. Because you are using an earlier version, the plugin is currently NOT RUNNING.', 'elementor' ), '4.7' );
+	$message = sprintf( esc_html__( 'Classic Elements requires WordPress version %s+. Because you are using an earlier version, the plugin is currently NOT RUNNING.', 'elementor' ), '4.7' );
 	$html_message = sprintf( '<div class="error">%s</div>', wpautop( $message ) );
 	echo wp_kses_post( $html_message );
 }

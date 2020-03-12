@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor menu anchor widget.
+ * Classic Elements menu anchor widget.
  *
- * Elementor widget that allows to link and menu to a specific position on the
+ * Classic Elements widget that allows to link and menu to a specific position on the
  * page.
  *
  * @since 1.0.0

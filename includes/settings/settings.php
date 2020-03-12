@@ -11,17 +11,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor "Settings" page in WordPress Dashboard.
+ * Classic Elements "Settings" page in ClassicPress Dashboard.
  *
- * Elementor settings page handler class responsible for creating and displaying
- * Elementor "Settings" page in WordPress dashboard.
+ * Classic Elements settings page handler class responsible for creating and displaying
+ * Classic Elements "Settings" page in ClassicPress dashboard.
  *
  * @since 1.0.0
  */
 class Settings extends Settings_Page {
 
 	/**
-	 * Settings page ID for Elementor settings.
+	 * Settings page ID for Classic Elements settings.
 	 */
 	const PAGE_ID = 'elementor';
 
@@ -58,7 +58,7 @@ class Settings extends Settings_Page {
 	/**
 	 * Register admin menu.
 	 *
-	 * Add new Elementor Settings admin menu.
+	 * Add new Classic Elements Settings admin menu.
 	 *
 	 * Fired by `admin_menu` action.
 	 *
@@ -71,8 +71,8 @@ class Settings extends Settings_Page {
 		$menu[] = [ '', 'read', 'separator-elementor', '', 'wp-menu-separator elementor' ]; // WPCS: override ok.
 
 		add_menu_page(
-			__( 'Elementor', 'elementor' ),
-			__( 'Elementor', 'elementor' ),
+			__( 'Classic Elements', 'elementor' ),
+			__( 'Classic Elements', 'elementor' ),
 			'manage_options',
 			self::PAGE_ID,
 			[ $this, 'display_settings_page' ],
@@ -82,7 +82,7 @@ class Settings extends Settings_Page {
 	}
 
 	/**
-	 * Reorder the Elementor menu items in admin.
+	 * Reorder the Classic Elements menu items in admin.
 	 * Based on WC.
 	 *
 	 * @since 2.4.0
@@ -119,9 +119,9 @@ class Settings extends Settings_Page {
 	}
 
 	/**
-	 * Register Elementor Pro sub-menu.
+	 * Register Classic Elements Pro sub-menu.
 	 *
-	 * Add new Elementor Pro sub-menu under the main Elementor menu.
+	 * Add new Classic Elements Pro sub-menu under the main Elementor menu.
 	 *
 	 * Fired by `admin_menu` action.
 	 *
@@ -161,9 +161,9 @@ class Settings extends Settings_Page {
 	}
 
 	/**
-	 * Register Elementor knowledge base sub-menu.
+	 * Register Classic Elements knowledge base sub-menu.
 	 *
-	 * Add new Elementor knowledge base sub-menu under the main Elementor menu.
+	 * Add new Classic Elements knowledge base sub-menu under the main Elementor menu.
 	 *
 	 * Fired by `admin_menu` action.
 	 *
@@ -191,9 +191,9 @@ class Settings extends Settings_Page {
 	}
 
 	/**
-	 * Go Elementor Pro.
+	 * Go Classic Elements Pro.
 	 *
-	 * Redirect the Elementor Pro page the clicking the Elementor Pro menu link.
+	 * Redirect the Classic Elements Pro page the clicking the Elementor Pro menu link.
 	 *
 	 * Fired by `admin_init` action.
 	 *
@@ -250,7 +250,7 @@ class Settings extends Settings_Page {
 					</div>
 					<div class="e-getting-started__content">
 						<div class="e-getting-started__content--narrow">
-							<h2><?php echo __( 'Welcome to Elementor', 'elementor' ); ?></h2>
+							<h2><?php echo __( 'Welcome to Classic Elements', 'elementor' ); ?></h2>
 							<p><?php echo __( 'We recommend you watch this 2 minute getting started video, and then try the editor yourself by dragging and dropping elements to create your first page.', 'elementor' ); ?></p>
 						</div>
 
@@ -349,7 +349,7 @@ class Settings extends Settings_Page {
 			<div class="elementor-blank_state">
 				<i class="eicon-nerd-chuckle"></i>
 				<h2><?php echo __( 'Get Theme Builder', 'elementor' ); ?></h2>
-				<p><?php echo __( 'Theme Builder is the industry leading all-in-one solution that lets you customize every part of your WordPress theme visually: Header, Footer, Single, Archive & WooCommerce.', 'elementor' ); ?></p>
+				<p><?php echo __( 'Theme Builder is the industry leading all-in-one solution that lets you customize every part of your ClassicPress theme visually: Header, Footer, Single, Archive & WooCommerce.', 'elementor' ); ?></p>
 				<a class="elementor-button elementor-button-default elementor-button-go-pro" target="_blank" href="<?php echo Utils::get_pro_link( 'https://elementor.com/theme-builder/?utm_source=theme-templates&utm_campaign=gopro&utm_medium=wp-dash' ); ?>"><?php echo __( 'Go Pro', 'elementor' ); ?></a>
 			</div>
 		</div><!-- /.wrap -->
@@ -359,7 +359,7 @@ class Settings extends Settings_Page {
 	/**
 	 * On admin init.
 	 *
-	 * Preform actions on WordPress admin initialization.
+	 * Preform actions on ClassicPress admin initialization.
 	 *
 	 * Fired by `admin_init` action.
 	 *
@@ -452,7 +452,7 @@ class Settings extends Settings_Page {
 								'field_args' => [
 									'type' => 'checkbox',
 									'value' => 'yes',
-									'sub_desc' => __( 'Checking this box will disable Elementor\'s Default Colors, and make Elementor inherit the colors from your theme.', 'elementor' ),
+									'sub_desc' => __( 'Checking this box will disable Classic Elements\'s Default Colors, and make Classic Elements inherit the colors from your theme.', 'elementor' ),
 								],
 							],
 							'disable_typography_schemes' => [
@@ -460,13 +460,13 @@ class Settings extends Settings_Page {
 								'field_args' => [
 									'type' => 'checkbox',
 									'value' => 'yes',
-									'sub_desc' => __( 'Checking this box will disable Elementor\'s Default Fonts, and make Elementor inherit the fonts from your theme.', 'elementor' ),
+									'sub_desc' => __( 'Checking this box will disable Classic Elements\'s Default Fonts, and make Classic Elements inherit the fonts from your theme.', 'elementor' ),
 								],
 							],
 						],
 					],
 					'usage' => [
-						'label' => __( 'Improve Elementor', 'elementor' ),
+						'label' => __( 'Improve Classic Elements', 'elementor' ),
 						'fields' => [
 							'allow_tracking' => [
 								'label' => __( 'Usage Data Tracking', 'elementor' ),
@@ -661,7 +661,7 @@ class Settings extends Settings_Page {
 	 * @return string Settings page title.
 	 */
 	protected function get_page_title() {
-		return __( 'Elementor', 'elementor' );
+		return __( 'Classic Elements', 'elementor' );
 	}
 
 	/**

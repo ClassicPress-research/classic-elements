@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor divider widget.
+ * Classic Elements divider widget.
  *
- * Elementor widget that displays a line that divides different elements in the
+ * Classic Elements widget that displays a line that divides different elements in the
  * page.
  *
  * @since 1.0.0

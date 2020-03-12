@@ -600,7 +600,7 @@ abstract class Base extends Base_File {
 		/**
 		 * Parse CSS file.
 		 *
-		 * Fires when CSS file is parsed on Elementor.
+		 * Fires when CSS file is parsed on Classic Elements.
 		 *
 		 * The dynamic portion of the hook name, `$name`, refers to the CSS file name.
 		 *

@@ -9,10 +9,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor widgets manager.
+ * Classic Elements widgets manager.
  *
- * Elementor widgets manager handler class is responsible for registering and
- * initializing all the supported Elementor widgets.
+ * Classic Elements widgets manager handler class is responsible for registering and
+ * initializing all the supported Classic Elements widgets.
  *
  * @since 1.0.0
  */
@@ -33,8 +33,8 @@ class Widgets_Manager {
 	/**
 	 * Init widgets.
 	 *
-	 * Initialize Elementor widgets manager. Include all the the widgets files
-	 * and register each Elementor and WordPress widget.
+	 * Initialize Classic Elements widgets manager. Include all the the widgets files
+	 * and register each Classic Elements and WordPress widget.
 	 *
 	 * @since 2.0.0
 	 * @access private
@@ -90,7 +90,7 @@ class Widgets_Manager {
 		/**
 		 * After widgets registered.
 		 *
-		 * Fires after Elementor widgets are registered.
+		 * Fires after Classic Elements widgets are registered.
 		 *
 		 * @since 1.0.0
 		 *
@@ -100,11 +100,11 @@ class Widgets_Manager {
 	}
 
 	/**
-	 * Register WordPress widgets.
+	 * Register ClassicPress widgets.
 	 *
-	 * Add native WordPress widget to the list of registered widget types.
+	 * Add native ClassicPress widget to the list of registered widget types.
 	 *
-	 * Exclude the widgets that are in Elementor widgets black list. Theme and
+	 * Exclude the widgets that are in Classic Elements widgets black list. Theme and
 	 * plugin authors can filter the black list.
 	 *
 	 * @since 2.0.0
@@ -132,7 +132,7 @@ class Widgets_Manager {
 		$black_list = [];
 
 		/**
-		 * Elementor widgets black list.
+		 * Classic Elements widgets black list.
 		 *
 		 * Filters the widgets black list that won't be displayed in the panel.
 		 *
@@ -165,7 +165,7 @@ class Widgets_Manager {
 	/**
 	 * Require files.
 	 *
-	 * Require Elementor widget base class.
+	 * Require Classic Elements widget base class.
 	 *
 	 * @since 2.0.0
 	 * @access private
@@ -182,7 +182,7 @@ class Widgets_Manager {
 	 * @since 1.0.0
 	 * @access public
 	 *
-	 * @param Widget_Base $widget Elementor widget.
+	 * @param Widget_Base $widget Classic Elements widget.
 	 *
 	 * @return true True if the widget was registered.
 	*/
@@ -282,7 +282,7 @@ class Widgets_Manager {
 	/**
 	 * Ajax render widget.
 	 *
-	 * Ajax handler for Elementor render_widget.
+	 * Ajax handler for Classic Elements render_widget.
 	 *
 	 * Fired by `wp_ajax_elementor_render_widget` action.
 	 *
@@ -330,9 +330,9 @@ class Widgets_Manager {
 	}
 
 	/**
-	 * Ajax get WordPress widget form.
+	 * Ajax get ClassicPress widget form.
 	 *
-	 * Ajax handler for Elementor editor get_wp_widget_form.
+	 * Ajax handler for Classic Elements editor get_wp_widget_form.
 	 *
 	 * Fired by `wp_ajax_elementor_editor_get_wp_widget_form` action.
 	 *
@@ -497,7 +497,7 @@ class Widgets_Manager {
 	/**
 	 * Widgets manager constructor.
 	 *
-	 * Initializing Elementor widgets manager.
+	 * Initializing Classic Elements widgets manager.
 	 *
 	 * @since 1.0.0
 	 * @access public

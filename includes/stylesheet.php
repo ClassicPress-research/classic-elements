@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor stylesheet.
+ * Classic Elements stylesheet.
  *
- * Elementor stylesheet handler class responsible for setting up CSS rules and
+ * Classic Elements stylesheet handler class responsible for setting up CSS rules and
  * properties, and all the CSS `@media` rule with supported viewport width.
  *
  * @since 1.0.0

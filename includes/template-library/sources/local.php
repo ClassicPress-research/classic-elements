@@ -15,22 +15,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor template library local source.
+ * Classic Elements template library local source.
  *
- * Elementor template library local source handler class is responsible for
- * handling local Elementor templates saved by the user locally on his site.
+ * Classic Elements template library local source handler class is responsible for
+ * handling local Classic Elements templates saved by the user locally on his site.
  *
  * @since 1.0.0
  */
 class Source_Local extends Source_Base {
 
 	/**
-	 * Elementor template-library post-type slug.
+	 * Classic Elements template-library post-type slug.
 	 */
 	const CPT = 'elementor_library';
 
 	/**
-	 * Elementor template-library taxonomy slug.
+	 * Classic Elements template-library taxonomy slug.
 	 */
 	const TAXONOMY_TYPE_SLUG = 'elementor_library_type';
 
@@ -40,18 +40,18 @@ class Source_Local extends Source_Base {
 	const TAXONOMY_CATEGORY_SLUG = 'elementor_library_category';
 
 	/**
-	 * Elementor template-library meta key.
+	 * Classic Elements template-library meta key.
 	 * @deprecated 2.3.0 Use \Elementor\Core\Base\Document::TYPE_META_KEY instead
 	 */
 	const TYPE_META_KEY = '_elementor_template_type';
 
 	/**
-	 * Elementor template-library temporary files folder.
+	 * Classic Elements template-library temporary files folder.
 	 */
 	const TEMP_FILES_DIR = 'elementor/tmp';
 
 	/**
-	 * Elementor template-library bulk export action name.
+	 * Classic Elements template-library bulk export action name.
 	 */
 	const BULK_EXPORT_ACTION = 'elementor_export_multiple_templates';
 
@@ -302,7 +302,7 @@ class Source_Local extends Source_Base {
 		/**
 		 * Register template library category args.
 		 *
-		 * Filters the category arguments when registering elementor template library category.
+		 * Filters the category arguments when registering Classic Elements template library category.
 		 *
 		 * @since 2.4.0
 		 *
@@ -481,7 +481,7 @@ class Source_Local extends Source_Base {
 		/**
 		 * After template library save.
 		 *
-		 * Fires after Elementor template library was saved.
+		 * Fires after Classic Elements template library was saved.
 		 *
 		 * @since 1.0.1
 		 *
@@ -493,7 +493,7 @@ class Source_Local extends Source_Base {
 		/**
 		 * After template library update.
 		 *
-		 * Fires after Elementor template library was updated.
+		 * Fires after Classic Elements template library was updated.
 		 *
 		 * @since 1.0.1
 		 *
@@ -535,7 +535,7 @@ class Source_Local extends Source_Base {
 		/**
 		 * After template library update.
 		 *
-		 * Fires after Elementor template library was updated.
+		 * Fires after Classic Elements template library was updated.
 		 *
 		 * @since 1.0.0
 		 *
@@ -673,7 +673,7 @@ class Source_Local extends Source_Base {
 	 *
 	 * @param int $template_id The template ID.
 	 *
-	 * @return \WP_Error WordPress error if template export failed.
+	 * @return \WP_Error ClassicPress error if template export failed.
 	 */
 	public function export_template( $template_id ) {
 		$file_data = $this->prepare_template_export( $template_id );
@@ -705,7 +705,7 @@ class Source_Local extends Source_Base {
 	 *
 	 * @param array $template_ids An array of template IDs.
 	 *
-	 * @return \WP_Error WordPress error if export failed.
+	 * @return \WP_Error ClassicPress error if export failed.
 	 */
 	public function export_multiple_templates( array $template_ids ) {
 		$files = [];
@@ -810,7 +810,7 @@ class Source_Local extends Source_Base {
 
 			$valid_entries = [];
 
-			// phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+			// phpcs:ignore ClassicPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 			for ( $i = 0; $i < $zip->numFiles; $i++ ) {
 				$zipped_file_name = $zip->getNameIndex( $i );
 				$zipped_extension = pathinfo( $zipped_file_name, PATHINFO_EXTENSION );
@@ -883,7 +883,7 @@ class Source_Local extends Source_Base {
 	/**
 	 * Admin import template form.
 	 *
-	 * The import form displayed in "My Library" screen in WordPress dashboard.
+	 * The import form displayed in "My Library" screen in ClassicPress dashboard.
 	 *
 	 * The form allows the user to import template in json/zip format to the site.
 	 *
@@ -903,7 +903,7 @@ class Source_Local extends Source_Base {
 		<div id="elementor-hidden-area">
 			<a id="elementor-import-template-trigger" class="page-title-action"><?php echo __( 'Import Templates', 'elementor' ); ?></a>
 			<div id="elementor-import-template-area">
-				<div id="elementor-import-template-title"><?php echo __( 'Choose an Elementor template JSON file or a .zip archive of Elementor templates, and add them to the list of templates available in your library.', 'elementor' ); ?></div>
+				<div id="elementor-import-template-title"><?php echo __( 'Choose an Classic Elements template JSON file or a .zip archive of Classic Elements templates, and add them to the list of templates available in your library.', 'elementor' ); ?></div>
 				<form id="elementor-import-template-form" method="post" action="<?php echo admin_url( 'admin-ajax.php' ); ?>" enctype="multipart/form-data">
 					<input type="hidden" name="action" value="elementor_library_direct_actions">
 					<input type="hidden" name="library_action" value="direct_import_template">

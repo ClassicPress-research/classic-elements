@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor user report.
+ * Classic Elements user report.
  *
- * Elementor system report handler class responsible for generating a report for
+ * Classic Elements system report handler class responsible for generating a report for
  * the user.
  *
  * @since 1.0.0

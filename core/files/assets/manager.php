@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor files manager.
+ * Classic Elements files manager.
  *
- * Elementor files manager handler class is responsible for creating files.
+ * Classic Elements files manager handler class is responsible for creating files.
  *
  * @since 2.6.0
  */
@@ -25,16 +25,16 @@ class Manager {
 	/**
 	 * Assets manager constructor.
 	 *
-	 * Initializing the Elementor assets manager.
+	 * Initializing the Classic Elements assets manager.
 	 *
 	 * @access public
 	 */
 	public function __construct() {
 		$this->register_asset_types();
 		/**
-		 * Elementor files assets registered.
+		 * Classic Elements files assets registered.
 		 *
-		 * Fires after Elementor registers assets types
+		 * Fires after Classic Elements registers assets types
 		 *
 		 * @since 2.6.0
 		 */
@@ -57,7 +57,7 @@ class Manager {
 	/**
 	 * Register Asset Types
 	 *
-	 * Registers Elementor Asset Types
+	 * Registers Classic Elements Asset Types
 	 */
 	private function register_asset_types() {
 		$this->add_asset( new Svg_Handler() );

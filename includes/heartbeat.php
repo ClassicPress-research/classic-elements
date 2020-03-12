@@ -6,11 +6,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor heartbeat.
+ * Classic Elements heartbeat.
  *
- * Elementor heartbeat handler class is responsible for initializing Elementor
- * heartbeat. The class communicates with WordPress Heartbeat API while working
- * with Elementor.
+ * Classic Elements heartbeat handler class is responsible for initializing Classic Elements
+ * heartbeat. The class communicates with ClassicPress Heartbeat API while working
+ * with Classic Elements.
  *
  * @since 1.0.0
  */
@@ -19,7 +19,7 @@ class Heartbeat {
 	/**
 	 * Heartbeat received.
 	 *
-	 * Locks the Heartbeat response received when editing with Elementor.
+	 * Locks the Heartbeat response received when editing with Classic Elements.
 	 *
 	 * Fired by `heartbeat_received` filter.
 	 *
@@ -53,9 +53,9 @@ class Heartbeat {
 	/**
 	 * Refresh nonces.
 	 *
-	 * Filter the nonces to send to the editor when editing with Elementor. Used
+	 * Filter the nonces to send to the editor when editing with Classic Elements. Used
 	 * to refresh the nonce when the nonce expires while editing. This way the
-	 * user doesn't need to log-in again as Elementor fetches the new nonce from
+	 * user doesn't need to log-in again as Classic Elements fetches the new nonce from
 	 * the server using ajax.
 	 *
 	 * Fired by `wp_refresh_nonces` filter.
@@ -85,7 +85,7 @@ class Heartbeat {
 	/**
 	 * Heartbeat constructor.
 	 *
-	 * Initializing Elementor heartbeat.
+	 * Initializing Classic Elements heartbeat.
 	 *
 	 * @since 1.0.0
 	 * @access public

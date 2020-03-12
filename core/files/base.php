@@ -80,7 +80,7 @@ abstract class Base {
 	 */
 	public function __construct( $file_name ) {
 		/**
-		 * Elementor File Name
+		 * Classic Elements File Name
 		 *
 		 * Filters the File name
 		 *

@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor image gallery widget.
+ * Classic Elements image gallery widget.
  *
- * Elementor widget that displays a set of images in an aligned grid.
+ * Classic Elements widget that displays a set of images in an aligned grid.
  *
  * @since 1.0.0
  */

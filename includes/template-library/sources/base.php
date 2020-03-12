@@ -10,10 +10,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor template library source base.
+ * Classic Elements template library source base.
  *
- * Elementor template library source base handler class is responsible for
- * initializing all the methods controlling the source of Elementor templates.
+ * Classic Elements template library source base handler class is responsible for
+ * initializing all the methods controlling the source of Classic Elements templates.
  *
  * @since 1.0.0
  * @abstract
@@ -206,7 +206,7 @@ abstract class Source_Base {
 	/**
 	 * Get current user meta.
 	 *
-	 * Retrieve Elementor meta data for the current user.
+	 * Retrieve Classic Elements meta data for the current user.
 	 *
 	 * @since 1.9.0
 	 * @access public
@@ -262,13 +262,13 @@ abstract class Source_Base {
 	/**
 	 * Replace elements IDs.
 	 *
-	 * For any given Elementor content/data, replace the IDs with new randomly
+	 * For any given Classic Elements content/data, replace the IDs with new randomly
 	 * generated IDs.
 	 *
 	 * @since 1.0.0
 	 * @access protected
 	 *
-	 * @param array $content Any type of Elementor data.
+	 * @param array $content Any type of Classic Elements data.
 	 *
 	 * @return mixed Iterated data.
 	 */
@@ -281,9 +281,9 @@ abstract class Source_Base {
 	}
 
 	/**
-	 * Get Elementor library user meta prefix.
+	 * Get Classic Elements library user meta prefix.
 	 *
-	 * Retrieve user meta prefix used to save Elementor data.
+	 * Retrieve user meta prefix used to save Classic Elements data.
 	 *
 	 * @since 1.9.0
 	 * @access protected

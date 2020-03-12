@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor sidebar widget.
+ * Classic Elements sidebar widget.
  *
- * Elementor widget that insert any sidebar into the page.
+ * Classic Elements widget that insert any sidebar into the page.
  *
  * @since 1.0.0
  */

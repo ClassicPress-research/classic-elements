@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor heading widget.
+ * Classic Elements heading widget.
  *
- * Elementor widget that displays an eye-catching headlines.
+ * Classic Elements widget that displays an eye-catching headlines.
  *
  * @since 1.0.0
  */

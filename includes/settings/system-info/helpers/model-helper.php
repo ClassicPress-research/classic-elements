@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor model helper.
+ * Classic Elements model helper.
  *
- * Elementor model helper handler class is responsible for filtering properties.
+ * Classic Elements model helper handler class is responsible for filtering properties.
  *
  * @since 1.0.0
  */

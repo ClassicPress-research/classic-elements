@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor column element.
+ * Classic Elements column element.
  *
- * Elementor column handler class is responsible for initializing the column
+ * Classic Elements column handler class is responsible for initializing the column
  * element.
  *
  * @since 1.0.0

@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor icon widget.
+ * Classic Elements icon widget.
  *
- * Elementor widget that displays an icon from over 600+ icons.
+ * Classic Elements widget that displays an icon from over 600+ icons.
  *
  * @since 1.0.0
  */

@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor HTML widget.
+ * Classic Elements HTML widget.
  *
- * Elementor widget that insert a custom HTML code into the page.
+ * Classic Elements widget that insert a custom HTML code into the page.
  *
  * @since 1.0.0
  */

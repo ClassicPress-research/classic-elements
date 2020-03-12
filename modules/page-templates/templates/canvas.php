@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	/**
 	 * Before canvas page template content.
 	 *
-	 * Fires before the content of Elementor canvas page template.
+	 * Fires before the content of Classic Elements canvas page template.
 	 *
 	 * @since 1.0.0
 	 */

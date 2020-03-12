@@ -6,24 +6,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor "Tools" page in WordPress Dashboard.
+ * Classic Elements "Tools" page in ClassicPress Dashboard.
  *
- * Elementor settings page handler class responsible for creating and displaying
- * Elementor "Tools" page in WordPress dashboard.
+ * Classic Elements settings page handler class responsible for creating and displaying
+ * Classic Elements "Tools" page in ClassicPress dashboard.
  *
  * @since 1.0.0
  */
 class Tools extends Settings_Page {
 
 	/**
-	 * Settings page ID for Elementor tools.
+	 * Settings page ID for Classic Elements tools.
 	 */
 	const PAGE_ID = 'elementor-tools';
 
 	/**
 	 * Register admin menu.
 	 *
-	 * Add new Elementor Tools admin menu.
+	 * Add new Classic Elements Tools admin menu.
 	 *
 	 * Fired by `admin_menu` action.
 	 *
@@ -64,7 +64,7 @@ class Tools extends Settings_Page {
 	 * Replace URLs.
 	 *
 	 * Sends an ajax request to replace old URLs to new URLs. This method also
-	 * updates all the Elementor data.
+	 * updates all the Classic Elements data.
 	 *
 	 * Fired by `wp_ajax_elementor_replace_url` action.
 	 *
@@ -86,9 +86,9 @@ class Tools extends Settings_Page {
 	}
 
 	/**
-	 * Elementor version rollback.
+	 * Classic Elements version rollback.
 	 *
-	 * Rollback to previous Elementor version.
+	 * Rollback to previous Classic Elements version.
 	 *
 	 * Fired by `admin_post_elementor_rollback` action.
 	 *
@@ -126,7 +126,7 @@ class Tools extends Settings_Page {
 	/**
 	 * Tools page constructor.
 	 *
-	 * Initializing Elementor "Tools" page.
+	 * Initializing Classic Elements "Tools" page.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -241,7 +241,7 @@ class Tools extends Settings_Page {
 							$intro_text = sprintf(
 								/* translators: %s: Codex URL */
 								__( '<strong>Important:</strong> It is strongly recommended that you <a target="_blank" href="%s">backup your database</a> before using Replace URL.', 'elementor' ),
-								'https://codex.wordpress.org/WordPress_Backups'
+								'https://codex.wordpress.org/ClassicPress_Backups'
 							);
 							$intro_text = '<div>' . $intro_text . '</div>';
 
@@ -254,7 +254,7 @@ class Tools extends Settings_Page {
 								'field_args' => [
 									'type' => 'raw_html',
 									'html' => sprintf( '<input type="text" name="from" placeholder="http://old-url.com" class="medium-text"><input type="text" name="to" placeholder="http://new-url.com" class="medium-text"><button data-nonce="%s" class="button elementor-button-spinner" id="elementor-replace-url-button">%s</button>', wp_create_nonce( 'elementor_replace_url' ), __( 'Replace URL', 'elementor' ) ),
-									'desc' => __( 'Enter your old and new URLs for your WordPress installation, to update all Elementor data (Relevant for domain transfers or move to \'HTTPS\').', 'elementor' ),
+									'desc' => __( 'Enter your old and new URLs for your ClassicPress installation, to update all Elementor data (Relevant for domain transfers or move to \'HTTPS\').', 'elementor' ),
 								],
 							],
 						],

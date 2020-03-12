@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor embed.
+ * Classic Elements embed.
  *
- * Elementor embed handler class is responsible for Elementor embed functionality.
+ * Classic Elements embed handler class is responsible for Classic Elements embed functionality.
  * The class holds the supported providers with their embed patters, and handles
  * their custom properties to create custom HTML with the embeded content.
  *

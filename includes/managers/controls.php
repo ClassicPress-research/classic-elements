@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor controls manager.
+ * Classic Elements controls manager.
  *
- * Elementor controls manager handler class is responsible for registering and
+ * Classic Elements controls manager handler class is responsible for registering and
  * initializing all the supported controls, both regular controls and the group
  * controls.
  *

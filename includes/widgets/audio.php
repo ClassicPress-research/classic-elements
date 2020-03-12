@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor audio widget.
+ * Classic Elements audio widget.
  *
- * Elementor widget that displays an audio player.
+ * Classic Elements widget that displays an audio player.
  *
  * @since 1.0.0
  */

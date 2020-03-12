@@ -21,9 +21,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor plugin.
+ * Classic Elements plugin.
  *
- * The main plugin handler class is responsible for initializing Elementor. The
+ * The main plugin handler class is responsible for initializing Classic Elements. The
  * class registers and all the components required to run the plugin.
  *
  * @since 1.0.0
@@ -346,9 +346,9 @@ class Plugin {
 	public $posts_css_manager;
 
 	/**
-	 * WordPress widgets manager.
+	 * ClassicPress widgets manager.
 	 *
-	 * Holds the WordPress widgets manager.
+	 * Holds the ClassicPress widgets manager.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -452,9 +452,9 @@ class Plugin {
 			self::$instance = new self();
 
 			/**
-			 * Elementor loaded.
+			 * Classic Elements loaded.
 			 *
-			 * Fires when Elementor was fully loaded and instantiated.
+			 * Fires when Classic Elements was fully loaded and instantiated.
 			 *
 			 * @since 1.0.0
 			 */
@@ -467,8 +467,8 @@ class Plugin {
 	/**
 	 * Init.
 	 *
-	 * Initialize Elementor Plugin. Register Elementor support for all the
-	 * supported post types and initialize Elementor components.
+	 * Initialize Classic Elements Plugin. Register Classic Elements support for all the
+	 * supported post types and initialize Classic Elements components.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -479,9 +479,9 @@ class Plugin {
 		$this->init_components();
 
 		/**
-		 * Elementor init.
+		 * Classic Elements init.
 		 *
-		 * Fires on Elementor init, after Elementor has finished loading but
+		 * Fires on Classic Elements init, after Classic Elements has finished loading but
 		 * before any headers are sent.
 		 *
 		 * @since 1.0.0
@@ -492,13 +492,13 @@ class Plugin {
 	/**
 	 * Get install time.
 	 *
-	 * Retrieve the time when Elementor was installed.
+	 * Retrieve the time when Classic Elements was installed.
 	 *
 	 * @since 2.6.0
 	 * @access public
 	 * @static
 	 *
-	 * @return int Unix timestamp when Elementor was installed.
+	 * @return int Unix timestamp when Classic Elements was installed.
 	 */
 	public function get_install_time() {
 		$installed_time = get_option( '_elementor_installed_time' );
@@ -526,8 +526,8 @@ class Plugin {
 	/**
 	 * Init components.
 	 *
-	 * Initialize Elementor components. Register actions, run setting manager,
-	 * initialize all the components that run elementor, and if in admin page
+	 * Initialize Classic Elements components. Register actions, run setting manager,
+	 * initialize all the components that run Classic Elements, and if in admin page
 	 * initialize admin components.
 	 *
 	 * @since 1.0.0
@@ -599,7 +599,7 @@ class Plugin {
 	/**
 	 * Add custom post type support.
 	 *
-	 * Register Elementor support for all the supported post types defined by
+	 * Register Classic Elements support for all the supported post types defined by
 	 * the user in the admin screen and saved as `elementor_cpt_support` option
 	 * in WordPress `$wpdb->options` table.
 	 *
@@ -652,7 +652,7 @@ class Plugin {
 	}
 
 	final public static function get_title() {
-		return __( 'Elementor', 'elementor' );
+		return __( 'Classic Elements', 'elementor' );
 	}
 }
 

@@ -58,7 +58,7 @@ abstract class DB_Upgrades_Manager extends Background_Task_Manager {
 	public function on_runner_complete( $did_tasks = false ) {
 		$logger = Plugin::$instance->logger->get_logger();
 
-		$logger->info( 'Elementor data updater process has been completed.', [
+		$logger->info( 'Classic Elements data updater process has been completed.', [
 			'meta' => [
 				'plugin' => $this->get_plugin_label(),
 				'from' => $this->current_version,
@@ -124,7 +124,7 @@ abstract class DB_Upgrades_Manager extends Background_Task_Manager {
 
 		$updater->save()->dispatch();
 
-		Plugin::$instance->logger->get_logger()->info( 'Elementor data updater process has been queued.', [
+		Plugin::$instance->logger->get_logger()->info( 'Classic Elements data updater process has been queued.', [
 			'meta' => [
 				'plugin' => $this->get_plugin_label(),
 				'from' => $this->current_version,

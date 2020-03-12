@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor section element.
+ * Classic Elements section element.
  *
- * Elementor section handler class is responsible for initializing the section
+ * Classic Elements section handler class is responsible for initializing the section
  * element.
  *
  * @since 1.0.0
@@ -19,10 +19,10 @@ class Element_Section extends Element_Base {
 	 * Section predefined columns presets.
 	 *
 	 * Holds the predefined columns width for each columns count available by
-	 * default by Elementor. Default is an empty array.
+	 * default by Classic Elements. Default is an empty array.
 	 *
 	 * Note that when the user creates a section he can define custom sizes for
-	 * the columns. But Elementor sets default values for predefined columns.
+	 * the columns. But Classic Elements sets default values for predefined columns.
 	 *
 	 * For example two columns 50% width each one, or three columns 33.33% each
 	 * one. This property hold the data for those preset values.
@@ -132,7 +132,7 @@ class Element_Section extends Element_Base {
 	 * section can have by default. For example a column can have two columns
 	 * 50% width each one, or three columns 33.33% each one.
 	 *
-	 * Note that Elementor sections have default section presets but the user
+	 * Note that Classic Elements sections have default section presets but the user
 	 * can set custom number of columns and define custom sizes for each column.
 
 	 * @since 1.0.0

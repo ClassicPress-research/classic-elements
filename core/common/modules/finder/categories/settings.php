@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Settings Category
  *
- * Provides items related to Elementor's settings.
+ * Provides items related to Classic Elements's settings.
  */
 class Settings extends Base_Category {
 
@@ -48,12 +48,12 @@ class Settings extends Base_Category {
 				'keywords' => [ 'general', 'settings', 'elementor' ],
 			],
 			'style' => [
-				'title' => __( 'Style', 'elementor' ),
+				'title' => __( 'Style Settings', 'elementor' ),
 				'url' => $settings_url . '#tab-style',
 				'keywords' => [ 'style', 'settings', 'elementor' ],
 			],
 			'advanced' => [
-				'title' => __( 'Advanced', 'elementor' ),
+				'title' => __( 'Advanced Settings', 'elementor' ),
 				'url' => $settings_url . '#tab-advanced',
 				'keywords' => [ 'advanced', 'settings', 'elementor' ],
 			],

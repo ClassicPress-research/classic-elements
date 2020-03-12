@@ -8,19 +8,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor WordPress environment report.
+ * Classic Elements ClassicPress environment report.
  *
- * Elementor system report handler class responsible for generating a report for
- * the WordPress environment.
+ * Classic Elements system report handler class responsible for generating a report for
+ * the ClassicPress environment.
  *
  * @since 1.0.0
  */
-class WordPress_Reporter extends Base_Reporter {
+class ClassicPress_Reporter extends Base_Reporter {
 
 	/**
-	 * Get WordPress environment reporter title.
+	 * Get ClassicPress environment reporter title.
 	 *
-	 * Retrieve WordPress environment reporter title.
+	 * Retrieve ClassicPress environment reporter title.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -28,13 +28,13 @@ class WordPress_Reporter extends Base_Reporter {
 	 * @return string Reporter title.
 	 */
 	public function get_title() {
-		return 'WordPress Environment';
+		return 'ClassicPress Environment';
 	}
 
 	/**
-	 * Get WordPress environment report fields.
+	 * Get ClassicPress environment report fields.
 	 *
-	 * Retrieve the required fields for the WordPress environment report.
+	 * Retrieve the required fields for the ClassicPress environment report.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -58,9 +58,9 @@ class WordPress_Reporter extends Base_Reporter {
 	}
 
 	/**
-	 * Get WordPress memory limit.
+	 * Get ClassicPress memory limit.
 	 *
-	 * Retrieve the WordPress memory limit.
+	 * Retrieve the ClassicPress memory limit.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -68,7 +68,7 @@ class WordPress_Reporter extends Base_Reporter {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value          WordPress memory limit.
+	 *    @type string $value          ClassicPress memory limit.
 	 *    @type string $recommendation Recommendation memory limit.
 	 *    @type bool   $warning        Whether to display a warning. True if the limit
 	 *                                 is below the recommended 64M, False otherwise.
@@ -100,9 +100,9 @@ class WordPress_Reporter extends Base_Reporter {
 	}
 
 	/**
-	 * Get WordPress version.
+	 * Get ClassicPress version.
 	 *
-	 * Retrieve the WordPress version.
+	 * Retrieve the ClassicPress version.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -110,7 +110,7 @@ class WordPress_Reporter extends Base_Reporter {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value WordPress version.
+	 *    @type string $value ClassicPress version.
 	 * }
 	 */
 	public function get_version() {
@@ -142,7 +142,7 @@ class WordPress_Reporter extends Base_Reporter {
 	/**
 	 * Get site URL.
 	 *
-	 * Retrieve WordPress site URL.
+	 * Retrieve ClassicPress site URL.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -150,7 +150,7 @@ class WordPress_Reporter extends Base_Reporter {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value WordPress site URL.
+	 *    @type string $value ClassicPress site URL.
 	 * }
 	 */
 	public function get_site_url() {
@@ -162,7 +162,7 @@ class WordPress_Reporter extends Base_Reporter {
 	/**
 	 * Get home URL.
 	 *
-	 * Retrieve WordPress home URL.
+	 * Retrieve ClassicPress home URL.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -170,7 +170,7 @@ class WordPress_Reporter extends Base_Reporter {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value WordPress home URL.
+	 *    @type string $value ClassicPress home URL.
 	 * }
 	 */
 	public function get_home_url() {
@@ -190,7 +190,7 @@ class WordPress_Reporter extends Base_Reporter {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value WordPress permalink structure.
+	 *    @type string $value ClassicPress permalink structure.
 	 * }
 	 */
 	public function get_permalink_structure() {
@@ -218,7 +218,7 @@ class WordPress_Reporter extends Base_Reporter {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value WordPress site language.
+	 *    @type string $value ClassicPress site language.
 	 * }
 	 */
 	public function get_language() {
@@ -248,9 +248,9 @@ class WordPress_Reporter extends Base_Reporter {
 	}
 
 	/**
-	 * Get WordPress timezone.
+	 * Get ClassicPress timezone.
 	 *
-	 * Retrieve WordPress timezone.
+	 * Retrieve ClassicPress timezone.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -258,7 +258,7 @@ class WordPress_Reporter extends Base_Reporter {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value WordPress timezone.
+	 *    @type string $value ClassicPress timezone.
 	 * }
 	 */
 	public function get_timezone() {
@@ -273,9 +273,9 @@ class WordPress_Reporter extends Base_Reporter {
 	}
 
 	/**
-	 * Get WordPress administrator email.
+	 * Get ClassicPress administrator email.
 	 *
-	 * Retrieve WordPress administrator email.
+	 * Retrieve ClassicPress administrator email.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -283,7 +283,7 @@ class WordPress_Reporter extends Base_Reporter {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value WordPress administrator email.
+	 *    @type string $value ClassicPress administrator email.
 	 * }
 	 */
 	public function get_admin_email() {
@@ -295,7 +295,7 @@ class WordPress_Reporter extends Base_Reporter {
 	/**
 	 * Get debug mode.
 	 *
-	 * Whether WordPress debug mode is enabled or not.
+	 * Whether ClassicPress debug mode is enabled or not.
 	 *
 	 * @since 1.0.0
 	 * @access public

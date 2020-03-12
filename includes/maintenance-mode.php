@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor maintenance mode.
+ * Classic Elements maintenance mode.
  *
- * Elementor maintenance mode handler class is responsible for the Elementor
+ * Classic Elements maintenance mode handler class is responsible for the Classic Elements
  * "Maintenance Mode" and the "Coming Soon" features.
  *
  * @since 1.4.0
@@ -33,9 +33,9 @@ class Maintenance_Mode {
 	const MODE_COMING_SOON = 'coming_soon';
 
 	/**
-	 * Get elementor option.
+	 * Get Classic Elements option.
 	 *
-	 * Retrieve elementor option from the database.
+	 * Retrieve Classic Elements option from the database.
 	 *
 	 * @since 1.4.0
 	 * @access public
@@ -52,9 +52,9 @@ class Maintenance_Mode {
 	}
 
 	/**
-	 * Set elementor option.
+	 * Set Classic Elements option.
 	 *
-	 * Update elementor option in the database.
+	 * Update Classic Elements option in the database.
 	 *
 	 * @since 1.4.0
 	 * @access public
@@ -143,7 +143,7 @@ class Maintenance_Mode {
 			header( 'Retry-After: 600' );
 		}
 
-		// Setup global post for Elementor\frontend so `_has_elementor_in_page = true`.
+		// Setup global post for Classic Elements\frontend so `_has_elementor_in_page = true`.
 		$GLOBALS['post'] = get_post( self::get( 'template_id' ) ); // WPCS: override ok.
 
 		// Set the template as `$wp_query->current_object` for `wp_title` and etc.
@@ -156,7 +156,7 @@ class Maintenance_Mode {
 	/**
 	 * Register settings fields.
 	 *
-	 * Adds new "Maintenance Mode" settings fields to Elementor admin page.
+	 * Adds new "Maintenance Mode" settings fields to Classic Elements admin page.
 	 *
 	 * The method need to receive the an instance of the Tools settings page
 	 * to add the new maintenance mode functionality.

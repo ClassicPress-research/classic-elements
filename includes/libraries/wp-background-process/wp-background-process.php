@@ -345,7 +345,7 @@ if ( ! class_exists( 'WP_Background_Process' ) ) {
 		 * Memory exceeded
 		 *
 		 * Ensures the batch process never exceeds 90%
-		 * of the maximum WordPress memory.
+		 * of the maximum ClassicPress memory.
 		 *
 		 * @return bool
 		 */

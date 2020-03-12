@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor controls stack.
+ * Classic Elements controls stack.
  *
  * An abstract class that provides the needed properties and methods to
  * manage and handle controls in the editor panel to inheriting classes.
@@ -73,7 +73,7 @@ abstract class Controls_Stack extends Base_Object {
 	/**
 	 * The configuration.
 	 *
-	 * Holds the configuration used to generate the Elementor editor. It includes
+	 * Holds the configuration used to generate the Classic Elements editor. It includes
 	 * the element name, icon, categories, etc.
 	 *
 	 * @access private
@@ -1335,7 +1335,7 @@ abstract class Controls_Stack extends Base_Object {
 		/**
 		 * Before section start.
 		 *
-		 * Fires before Elementor section starts in the editor panel.
+		 * Fires before Classic Elements section starts in the editor panel.
 		 *
 		 * @since 1.4.0
 		 *
@@ -1348,7 +1348,7 @@ abstract class Controls_Stack extends Base_Object {
 		/**
 		 * Before section start.
 		 *
-		 * Fires before Elementor section starts in the editor panel.
+		 * Fires before Classic Elements section starts in the editor panel.
 		 *
 		 * The dynamic portions of the hook name, `$section_name` and `$section_id`, refers to the section name and section ID, respectively.
 		 *
@@ -1364,7 +1364,7 @@ abstract class Controls_Stack extends Base_Object {
 		$this->add_control( $section_id, $args );
 
 		if ( null !== $this->current_section ) {
-			wp_die( sprintf( 'Elementor: You can\'t start a section before the end of the previous section "%s".', $this->current_section['section'] ) ); // XSS ok.
+			wp_die( sprintf( 'Classic Elements: You can\'t start a section before the end of the previous section "%s".', $this->current_section['section'] ) ); // XSS ok.
 		}
 
 		$this->current_section = $this->get_section_args( $section_id );
@@ -1376,7 +1376,7 @@ abstract class Controls_Stack extends Base_Object {
 		/**
 		 * After section start.
 		 *
-		 * Fires after Elementor section starts in the editor panel.
+		 * Fires after Classic Elements section starts in the editor panel.
 		 *
 		 * @since 1.4.0
 		 *
@@ -1389,7 +1389,7 @@ abstract class Controls_Stack extends Base_Object {
 		/**
 		 * After section start.
 		 *
-		 * Fires after Elementor section starts in the editor panel.
+		 * Fires after Classic Elements section starts in the editor panel.
 		 *
 		 * The dynamic portions of the hook name, `$section_name` and `$section_id`, refers to the section name and section ID, respectively.
 		 *
@@ -1425,7 +1425,7 @@ abstract class Controls_Stack extends Base_Object {
 		/**
 		 * Before section end.
 		 *
-		 * Fires before Elementor section ends in the editor panel.
+		 * Fires before Classic Elements section ends in the editor panel.
 		 *
 		 * @since 1.4.0
 		 *
@@ -1438,7 +1438,7 @@ abstract class Controls_Stack extends Base_Object {
 		/**
 		 * Before section end.
 		 *
-		 * Fires before Elementor section ends in the editor panel.
+		 * Fires before Classic Elements section ends in the editor panel.
 		 *
 		 * The dynamic portions of the hook name, `$stack_name` and `$section_id`, refers to the stack name and section ID, respectively.
 		 *
@@ -1454,7 +1454,7 @@ abstract class Controls_Stack extends Base_Object {
 		/**
 		 * After section end.
 		 *
-		 * Fires after Elementor section ends in the editor panel.
+		 * Fires after Classic Elements section ends in the editor panel.
 		 *
 		 * @since 1.4.0
 		 *
@@ -1467,7 +1467,7 @@ abstract class Controls_Stack extends Base_Object {
 		/**
 		 * After section end.
 		 *
-		 * Fires after Elementor section ends in the editor panel.
+		 * Fires after Classic Elements section ends in the editor panel.
 		 *
 		 * The dynamic portions of the hook name, `$stack_name` and `$section_id`, refers to the section name and section ID, respectively.
 		 *
@@ -1497,7 +1497,7 @@ abstract class Controls_Stack extends Base_Object {
 	 */
 	public function start_controls_tabs( $tabs_id, array $args = [] ) {
 		if ( null !== $this->current_tab ) {
-			wp_die( sprintf( 'Elementor: You can\'t start tabs before the end of the previous tabs "%s".', $this->current_tab['tabs_wrapper'] ) ); // XSS ok.
+			wp_die( sprintf( 'Classic Elements: You can\'t start tabs before the end of the previous tabs "%s".', $this->current_tab['tabs_wrapper'] ) ); // XSS ok.
 		}
 
 		$args['type'] = Controls_Manager::TABS;
@@ -1552,7 +1552,7 @@ abstract class Controls_Stack extends Base_Object {
 	 */
 	public function start_controls_tab( $tab_id, $args ) {
 		if ( ! empty( $this->current_tab['inner_tab'] ) ) {
-			wp_die( sprintf( 'Elementor: You can\'t start a tab before the end of the previous tab "%s".', $this->current_tab['inner_tab'] ) ); // XSS ok.
+			wp_die( sprintf( 'Classic Elements: You can\'t start a tab before the end of the previous tab "%s".', $this->current_tab['inner_tab'] ) ); // XSS ok.
 		}
 
 		$args['type'] = Controls_Manager::TAB;

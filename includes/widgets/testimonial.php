@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor testimonial widget.
+ * Classic Elements testimonial widget.
  *
- * Elementor widget that displays customer testimonials that show social proof.
+ * Classic Elements widget that displays customer testimonials that show social proof.
  *
  * @since 1.0.0
  */

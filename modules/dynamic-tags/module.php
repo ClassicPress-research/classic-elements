@@ -11,10 +11,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor dynamic tags module.
+ * Classic Elements dynamic tags module.
  *
- * Elementor dynamic tags module handler class is responsible for registering
- * and managing Elementor dynamic tags modules.
+ * Classic Elements dynamic tags module handler class is responsible for registering
+ * and managing Classic Elements dynamic tags modules.
  *
  * @since 2.0.0
  */

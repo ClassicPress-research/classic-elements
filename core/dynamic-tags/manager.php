@@ -30,7 +30,7 @@ class Manager {
 	/**
 	 * Dynamic tags manager constructor.
 	 *
-	 * Initializing Elementor dynamic tags manager.
+	 * Initializing Classic Elements dynamic tags manager.
 	 *
 	 * @since 2.0.0
 	 * @access public
@@ -234,7 +234,7 @@ class Manager {
 			/**
 			 * Register dynamic tags.
 			 *
-			 * Fires when Elementor registers dynamic tags.
+			 * Fires when Classic Elements registers dynamic tags.
 			 *
 			 * @since 2.0.9
 			 *
@@ -354,7 +354,7 @@ class Manager {
 		/**
 		 * Before dynamic tags rendered.
 		 *
-		 * Fires before Elementor renders the dynamic tags.
+		 * Fires before Classic Elements renders the dynamic tags.
 		 *
 		 * @since 2.0.0
 		 */
@@ -377,7 +377,7 @@ class Manager {
 		/**
 		 * After dynamic tags rendered.
 		 *
-		 * Fires after Elementor renders the dynamic tags.
+		 * Fires after Classic Elements renders the dynamic tags.
 		 *
 		 * @since 2.0.0
 		 */

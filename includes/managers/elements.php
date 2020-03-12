@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor elements manager.
+ * Classic Elements elements manager.
  *
- * Elementor elements manager handler class is responsible for registering and
+ * Classic Elements elements manager handler class is responsible for registering and
  * initializing all the supported elements.
  *
  * @since 1.0.0
@@ -40,7 +40,7 @@ class Elements_Manager {
 	/**
 	 * Elements constructor.
 	 *
-	 * Initializing Elementor elements manager.
+	 * Initializing Classic Elements elements manager.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -233,8 +233,8 @@ class Elements_Manager {
 	/**
 	 * Init elements.
 	 *
-	 * Initialize Elementor elements by registering the supported elements.
-	 * Elementor supports by default `section` element and `column` element.
+	 * Initialize Classic Elements elements by registering the supported elements.
+	 * Classic Elements supports by default `section` element and `column` element.
 	 *
 	 * @since 2.0.0
 	 * @access private
@@ -251,7 +251,7 @@ class Elements_Manager {
 		/**
 		 * After elements registered.
 		 *
-		 * Fires after Elementor elements are registered.
+		 * Fires after Classic Elements elements are registered.
 		 *
 		 * @since 1.0.0
 		 */
@@ -292,7 +292,7 @@ class Elements_Manager {
 		/**
 		 * When categories are registered.
 		 *
-		 * Fires after basic categories are registered, before WordPress
+		 * Fires after basic categories are registered, before ClassicPress
 		 * category have been registered.
 		 *
 		 * This is where categories registered by external developers are
@@ -310,7 +310,7 @@ class Elements_Manager {
 		];
 
 		$this->categories['wordpress'] = [
-			'title' => __( 'WordPress', 'elementor' ),
+			'title' => __( 'ClassicPress', 'elementor' ),
 			'icon' => 'eicon-wordpress',
 			'active' => false,
 		];
@@ -319,7 +319,7 @@ class Elements_Manager {
 	/**
 	 * Require files.
 	 *
-	 * Require Elementor element base class and column, section and repeater
+	 * Require Classic Elements element base class and column, section and repeater
 	 * elements.
 	 *
 	 * @since 1.0.0

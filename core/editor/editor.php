@@ -20,9 +20,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor editor.
+ * Classic Elements editor.
  *
- * Elementor editor handler class is responsible for initializing Elementor
+ * Classic Elements editor handler class is responsible for initializing Classic Elements
  * editor and register all the actions needed to display the editor.
  *
  * @since 1.0.0
@@ -30,13 +30,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Editor {
 
 	/**
-	 * The nonce key for Elementor editor.
+	 * The nonce key for Classic Elements editor.
 	 * @deprecated 2.3.0
 	 */
 	const EDITING_NONCE_KEY = 'elementor-editing';
 
 	/**
-	 * User capability required to access Elementor editor.
+	 * User capability required to access Classic Elements editor.
 	 */
 	const EDITING_CAPABILITY = 'edit_posts';
 
@@ -115,7 +115,7 @@ class Editor {
 
 		add_filter( 'show_admin_bar', '__return_false' );
 
-		// Remove all WordPress actions
+		// Remove all ClassicPress actions
 		remove_all_actions( 'wp_head' );
 		remove_all_actions( 'wp_print_styles' );
 		remove_all_actions( 'wp_print_head_scripts' );
@@ -186,7 +186,7 @@ class Editor {
 	/**
 	 * Redirect to new URL.
 	 *
-	 * Used as a fallback function for the old URL structure of Elementor page
+	 * Used as a fallback function for the old URL structure of Classic Elements page
 	 * edit URL.
 	 *
 	 * Fired by `template_redirect` action.
@@ -478,7 +478,7 @@ class Editor {
 		/**
 		 * Before editor enqueue scripts.
 		 *
-		 * Fires before Elementor editor scripts are enqueued.
+		 * Fires before Classic Elements editor scripts are enqueued.
 		 *
 		 * @since 1.0.0
 		 */
@@ -559,7 +559,7 @@ class Editor {
 			'dynamicTags' => Plugin::$instance->dynamic_tags->get_config(),
 			'editButtons' => get_option( 'elementor_edit_buttons' ),
 			'i18n' => [
-				'elementor' => __( 'Elementor', 'elementor' ),
+				'elementor' => __( 'Classic Elements', 'elementor' ),
 				'delete' => __( 'Delete', 'elementor' ),
 				'cancel' => __( 'Cancel', 'elementor' ),
 				'got_it' => __( 'Got It', 'elementor' ),
@@ -575,7 +575,7 @@ class Editor {
 				'flexbox_attention_message' => __( 'Elementor 2.5 introduces key changes to the layout using CSS Flexbox. Your existing pages might have been affected, please review your page before publishing.', 'elementor' ),
 
 				// Menu.
-				'about_elementor' => __( 'About Elementor', 'elementor' ),
+				'about_elementor' => __( 'About Classic Elements', 'elementor' ),
 				'color_picker' => __( 'Color Picker', 'elementor' ),
 				'elementor_settings' => __( 'Dashboard Settings', 'elementor' ),
 				'global_colors' => __( 'Default Colors', 'elementor' ),
@@ -636,8 +636,8 @@ class Editor {
 				'templates_no_results_title' => __( 'No Results Found', 'elementor' ),
 				'templates_request_error' => __( 'The following error(s) occurred while processing the request:', 'elementor' ),
 				'yes' => __( 'Yes', 'elementor' ),
-				'blocks' => __( 'Blocks', 'elementor' ),
-				'pages' => __( 'Pages', 'elementor' ),
+				'blocks' => __( 'Content Blocks', 'elementor' ),
+				'pages' => __( 'Full Pages', 'elementor' ),
 				'my_templates' => __( 'My Templates', 'elementor' ),
 
 				// Incompatible Device.
@@ -679,7 +679,7 @@ class Editor {
 				'submit' => __( 'Submit', 'elementor' ),
 				'working_on_draft_notification' => __( 'This is just a draft. Play around and when you\'re done - click update.', 'elementor' ),
 				'keep_editing' => __( 'Keep Editing', 'elementor' ),
-				'have_a_look' => __( 'Have a look', 'elementor' ),
+				'have_a_look' => __( 'Take a look', 'elementor' ),
 				'view_all_revisions' => __( 'View All Revisions', 'elementor' ),
 				'dismiss' => __( 'Dismiss', 'elementor' ),
 				'saving_disabled' => __( 'Saving has been disabled until you’re reconnected.', 'elementor' ),
