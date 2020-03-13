@@ -151,7 +151,7 @@ class Admin extends App {
 					<?php echo __( 'Back to ClassicPress Editor', 'elementor' ); ?>
 				</span>
 				<span class="elementor-switch-mode-off">
-					<i class="eicon-elementor-square" aria-hidden="true"></i>
+					<i class="eicon-flow" aria-hidden="true"></i>
 					<?php echo __( 'Edit with Classic Elements', 'elementor' ); ?>
 				</span>
 			</button>
@@ -159,7 +159,7 @@ class Admin extends App {
 		<div id="elementor-editor">
 			<a id="elementor-go-to-edit-page-link" href="<?php echo $document->get_edit_url(); ?>">
 				<div id="elementor-editor-button" class="button button-primary button-hero">
-					<i class="eicon-elementor-square" aria-hidden="true"></i>
+					<i class="eicon-flow" aria-hidden="true"></i>
 					<?php echo __( 'Edit with Classic Elements', 'elementor' ); ?>
 				</div>
 				<div class="elementor-loader-wrapper">
