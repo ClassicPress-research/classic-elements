@@ -291,7 +291,7 @@ class Tools extends Settings_Page {
 							],
 						],
 					],
-					'beta' => [
+					/*'beta' => [
 						'label' => __( 'Become a Beta Tester', 'elementor' ),
 						'callback' => function() {
 							$intro_text = __( 'Turn-on Beta Tester, to get notified when a new beta version of Elementor or E-Pro is available. The Beta version will not install automatically. You always have the option to ignore it.', 'elementor' );
@@ -315,7 +315,7 @@ class Tools extends Settings_Page {
 								],
 							],
 						],
-					],
+					],*/
 				],
 			],
 		];

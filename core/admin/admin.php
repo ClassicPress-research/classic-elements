@@ -272,7 +272,7 @@ class Admin extends App {
 
 		array_unshift( $links, $settings_link );
 
-		$links['go_pro'] = sprintf( '<a href="%1$s" target="_blank" class="elementor-plugins-gopro">%2$s</a>', Utils::get_pro_link( 'https://classicelements.papge/pro/' ), __( 'Go Pro', 'elementor' ) );
+		$links['go_pro'] = sprintf( '<a href="%1$s" target="_blank" class="elementor-plugins-gopro">%2$s</a>', Utils::get_pro_link( 'https://classicelements.page/' ), __( 'Pro Coming Soon!', 'elementor' ) );
 
 		return $links;
 	}
@@ -601,7 +601,7 @@ class Admin extends App {
 		$additions_actions = [
 			'go-pro' => [
 				'title' => __( 'Go Pro', 'elementor' ),
-				'link' => Utils::get_pro_link( 'https://classicelements.page/pro/' ),
+				'link' => Utils::get_pro_link( 'https://classicelements.page/' ),
 			],
 		];
 
@@ -761,11 +761,11 @@ class Admin extends App {
 	public function __construct() {
 		Plugin::$instance->init_common();
 
-		$this->add_component( 'feedback', new Feedback() );
+		//$this->add_component( 'feedback', new Feedback() );
 
 		$this->add_component( 'canary-deployment', new Canary_Deployment() );
 
-		add_action( 'admin_init', [ $this, 'maybe_redirect_to_getting_started' ] );
+		//add_action( 'admin_init', [ $this, 'maybe_redirect_to_getting_started' ] );
 
 		add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_scripts' ] );
 		add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_styles' ] );
@@ -776,21 +776,21 @@ class Admin extends App {
 		add_filter( 'display_post_states', [ $this, 'add_elementor_post_state' ], 10, 2 );
 
 		add_filter( 'plugin_action_links_' . ELEMENTOR_PLUGIN_BASE, [ $this, 'plugin_action_links' ] );
-		add_filter( 'plugin_row_meta', [ $this, 'plugin_row_meta' ], 10, 2 );
+		//add_filter( 'plugin_row_meta', [ $this, 'plugin_row_meta' ], 10, 2 );
 
 		add_action( 'admin_notices', [ $this, 'admin_notices' ] );
 		add_action( 'admin_notices', [ $this, 'admin_upgrade_notices' ] );
 		add_filter( 'admin_body_class', [ $this, 'body_status_classes' ] );
-		add_filter( 'admin_footer_text', [ $this, 'admin_footer_text' ] );
+		//add_filter( 'admin_footer_text', [ $this, 'admin_footer_text' ] );
 
 		// Register Dashboard Widgets.
-		add_action( 'wp_dashboard_setup', [ $this, 'register_dashboard_widgets' ] );
+		//add_action( 'wp_dashboard_setup', [ $this, 'register_dashboard_widgets' ] );
 
 		// Admin Actions
 		add_action( 'admin_action_elementor_new_post', [ $this, 'admin_action_new_post' ] );
 
 		add_action( 'current_screen', [ $this, 'init_new_template' ] );
-		add_action( 'current_screen', [ $this, 'init_beta_tester' ] );
+		//add_action( 'current_screen', [ $this, 'init_beta_tester' ] );
 
 	}
 
@@ -799,10 +799,10 @@ class Admin extends App {
 	 * @access protected
 	 */
 	protected function get_init_settings() {
-		$beta_tester_email = get_user_meta( get_current_user_id(), User::BETA_TESTER_META_KEY, true );
-		$elementor_beta = get_option( 'elementor_beta', 'no' );
+		//$beta_tester_email = get_user_meta( get_current_user_id(), User::BETA_TESTER_META_KEY, true );
+		//$elementor_beta = get_option( 'elementor_beta', 'no' );
 		$all_introductions = User::get_introduction_meta();
-		$beta_tester_signup_dismissed = array_key_exists( Beta_Testers::BETA_TESTER_SIGNUP, $all_introductions );
+		//$beta_tester_signup_dismissed = array_key_exists( Beta_Testers::BETA_TESTER_SIGNUP, $all_introductions );
 
 		$settings = [
 			'home_url' => home_url(),
@@ -815,18 +815,18 @@ class Admin extends App {
 				'new_template' => __( 'New Template', 'elementor' ),
 				'back_to_wordpress_editor_message' => __( 'Please note that you are switching to ClassicPress default editor. Your current layout, design and content might break.', 'elementor' ),
 				'back_to_wordpress_editor_header' => __( 'Back to ClassicPress Editor', 'elementor' ),
-				'beta_tester_sign_up' => __( 'Sign Up', 'elementor' ),
-				'do_not_show_again' => __( 'Don\'t Show Again', 'elementor' ),
+				//'beta_tester_sign_up' => __( 'Sign Up', 'elementor' ),
+				//'do_not_show_again' => __( 'Don\'t Show Again', 'elementor' ),
 			],
 			'user' => [
 				'introduction' => User::get_introduction_meta(),
 			],
-			'beta_tester' => [
+			/*'beta_tester' => [
 				'beta_tester_signup' => Beta_Testers::BETA_TESTER_SIGNUP,
 				'has_email' => $beta_tester_email,
 				'option_enabled' => 'no' !== $elementor_beta,
 				'signup_dismissed' => $beta_tester_signup_dismissed,
-			],
+			],*/
 		];
 
 		return apply_filters( 'elementor/admin/localize_settings', $settings );
