@@ -129,7 +129,7 @@ class Settings extends Settings_Page {
 	 * @access public
 	 */
 	public function register_pro_menu() {
-		add_submenu_page(
+		/*add_submenu_page(
 			self::PAGE_ID,
 			__( 'Custom Fonts', 'elementor' ),
 			__( 'Custom Fonts', 'elementor' ),
@@ -154,7 +154,7 @@ class Settings extends Settings_Page {
 			'manage_options',
 			'go_elementor_pro',
 			[ $this, 'handle_external_redirects' ]
-		);
+		);*/
 
 		add_submenu_page( Source_Local::ADMIN_MENU_SLUG, __( 'Theme Templates', 'elementor' ), __( 'Theme Builder', 'elementor' ), 'manage_options', 'theme_templates', [ $this, 'elementor_theme_templates' ] );
 		add_submenu_page( Source_Local::ADMIN_MENU_SLUG, __( 'Popups', 'elementor' ), __( 'Popups', 'elementor' ), 'manage_options', 'popup_templates', [ $this, 'elementor_popups' ] );
@@ -206,12 +206,13 @@ class Settings extends Settings_Page {
 		}
 
 		if ( 'go_elementor_pro' === $_GET['page'] ) {
-			wp_redirect( Utils::get_pro_link( 'https://elementor.com/pro/?utm_source=wp-menu&utm_campaign=gopro&utm_medium=wp-dash' ) );
+			wp_redirect( Utils::get_pro_link( 'https://classicelements.page/' ) );
 			die;
 		}
 
 		if ( 'go_knowledge_base_site' === $_GET['page'] ) {
-			wp_redirect( 'https://go.elementor.com/docs-admin-menu/' );
+			//wp_redirect( 'https://classicelements.page/docs-admin-menu/' );
+			wp_redirect( 'https://classicelements.page/' );
 			die;
 		}
 	}
@@ -729,8 +730,8 @@ class Settings extends Settings_Page {
 		add_action( 'admin_init', [ $this, 'on_admin_init' ] );
 		add_action( 'admin_menu', [ $this, 'register_admin_menu' ], 20 );
 		add_action( 'admin_menu', [ $this, 'admin_menu_change_name' ], 200 );
-		add_action( 'admin_menu', [ $this, 'register_pro_menu' ], self::MENU_PRIORITY_GO_PRO );
-		add_action( 'admin_menu', [ $this, 'register_knowledge_base_menu' ], 501 );
+		//add_action( 'admin_menu', [ $this, 'register_pro_menu' ], self::MENU_PRIORITY_GO_PRO );
+		//add_action( 'admin_menu', [ $this, 'register_knowledge_base_menu' ], 501 );
 
 		// Clear CSS Meta after change print method.
 		add_action( 'add_option_elementor_css_print_method', [ $this, 'update_css_print_method' ] );
