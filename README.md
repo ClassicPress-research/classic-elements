@@ -1,11 +1,11 @@
 # Classic Elements Page Builder
 
-**Contributors:** [ClassicPress Reseach Team](https://github.com/ClassicPress-research), [Classic Elements Team](https://github.com/Classic-Elements)   
+**Contributors:** [ClassicPress Research Team](https://github.com/ClassicPress-research), [Classic Elements Team](https://github.com/Classic-Elements)   
 **Tags:** page builder, editor, landing page, drag-and-drop, classic elements, visual editor, wysiwyg, design, maintenance mode, coming soon, under construction, website builder, landing page builder, front-end builder  
-**Requires at least:** 4.7  
-**Tested up to:** 5.3  
-**Requires PHP:** 5.4  
-**Stable tag:** 99.2-upstream2.7.6  
+**Requires at least:** 1.0.0  
+**Tested up to:** 1.1.2  
+**Requires PHP:** 5.6  
+**Stable tag:** 0.1.0  
 **License:** GPLv3  
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.html  
 
