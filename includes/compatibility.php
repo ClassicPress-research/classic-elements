@@ -270,7 +270,7 @@ class Compatibility {
 	/**
 	 * Polylang compatibility.
 	 *
-	 * Fix Polylang compatibility with Elementor.
+	 * Fix Polylang compatibility with Classic Elements.
 	 *
 	 * @since 2.0.0
 	 * @access private
