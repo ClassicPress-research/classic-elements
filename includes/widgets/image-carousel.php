@@ -690,7 +690,9 @@ class Widget_Image_Carousel extends Widget_Base {
 					$this->add_render_attribute( $link_key, 'target', '_blank' );
 				}
 
-				if ( ! empty( $link['nofollow'] ) ) {
+				if ( ! empty( $link['nofollow'] ) && ! empty( $link['is_external'] ) ) {
+					$this->add_render_attribute( $link_key, 'rel', 'nofollow noopener' );
+				} elseif ( ! empty( $link['nofollow'] ) ) {
 					$this->add_render_attribute( $link_key, 'rel', 'nofollow' );
 				}
 

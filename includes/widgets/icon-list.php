@@ -563,7 +563,9 @@ class Widget_Icon_List extends Widget_Base {
 							$this->add_render_attribute( $link_key, 'target', '_blank' );
 						}
 
-						if ( $item['link']['nofollow'] ) {
+						if ( ! empty( $item['link']['nofollow'] ) && ( $item['link']['is_external'] ) ) {
+							$this->add_render_attribute( $link_key, 'rel', 'nofollow noopener' );
+						} elseif ( $item['link']['nofollow'] ) {
 							$this->add_render_attribute( $link_key, 'rel', 'nofollow' );
 						}
 

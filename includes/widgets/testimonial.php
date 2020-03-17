@@ -417,7 +417,9 @@ class Widget_Testimonial extends Widget_Base {
 				$this->add_render_attribute( 'link', 'target', '_blank' );
 			}
 
-			if ( ! empty( $settings['link']['nofollow'] ) ) {
+			if ( ! empty( $settings['link']['nofollow'] ) && ( $settings['link']['is_external'] ) ) {
+				$this->add_render_attribute( 'link', 'rel', 'nofollow noopener' );
+			} elseif ( ! empty( $settings['link']['nofollow'] ) ) {
 				$this->add_render_attribute( 'link', 'rel', 'nofollow' );
 			}
 		}

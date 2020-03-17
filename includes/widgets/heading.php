@@ -311,7 +311,9 @@ class Widget_Heading extends Widget_Base {
 				$this->add_render_attribute( 'url', 'target', '_blank' );
 			}
 
-			if ( ! empty( $settings['link']['nofollow'] ) ) {
+			if ( ! empty( $settings['link']['nofollow'] ) && ( $settings['link']['is_external'] ) ) {
+				$this->add_render_attribute( 'url', 'rel', 'nofollow noopener' );
+			} elseif ( ! empty( $settings['link']['nofollow'] ) ) {
 				$this->add_render_attribute( 'url', 'rel', 'nofollow' );
 			}
 

@@ -449,8 +449,10 @@ class Widget_Button extends Widget_Base {
 			if ( $settings['link']['is_external'] ) {
 				$this->add_render_attribute( 'button', 'target', '_blank' );
 			}
-
-			if ( $settings['link']['nofollow'] ) {
+			
+			if (  ! empty( $settings['link']['is_external'] ) && ( $settings['link']['nofollow'] ) ) {
+				$this->add_render_attribute( 'button', 'rel', 'nofollow noopener' );
+			} elseif ( $settings['link']['nofollow'] ) {
 				$this->add_render_attribute( 'button', 'rel', 'nofollow' );
 			}
 		}
