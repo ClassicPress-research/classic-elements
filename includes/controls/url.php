@@ -111,7 +111,9 @@ class Control_URL extends Control_Base_Multiple {
 					</div>
 					<div class="elementor-control-url-option">
 						<input id="<?php echo $nofollow_control_uid; ?>" type="checkbox" class="elementor-control-url-option-input" data-setting="nofollow">
-						<label for="<?php echo $nofollow_control_uid; ?>"><?php echo __( 'Add nofollow', 'elementor' ); ?></label>
+						<label for="<?php echo $nofollow_control_uid; ?>"><?php echo __( 'Add nofollow & noopener', 'elementor' ); ?></label>
+						<br / ><br / >
+						<p><?php echo __( 'Note: noopener will apply only if open in new window is checked!', 'elementor' ); ?></p>
 					</div>
 				</div>
 			</div>

@@ -410,8 +410,10 @@ class Widget_Icon extends Widget_Base {
 			if ( ! empty( $settings['link']['is_external'] ) ) {
 				$this->add_render_attribute( 'icon-wrapper', 'target', '_blank' );
 			}
-
-			if ( $settings['link']['nofollow'] ) {
+			
+			if ( ! empty( $settings['link']['is_external'] ) && ( $settings['link']['nofollow'] ) ) {
+				$this->add_render_attribute( 'icon-wrapper', 'rel', 'nofollow noopener' );
+			} elseif ( $settings['link']['nofollow'] ) {
 				$this->add_render_attribute( 'icon-wrapper', 'rel', 'nofollow' );
 			}
 		}

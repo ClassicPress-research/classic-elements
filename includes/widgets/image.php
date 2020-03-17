@@ -630,7 +630,9 @@ class Widget_Image extends Widget_Base {
 				$this->add_render_attribute( 'link', 'target', '_blank' );
 			}
 
-			if ( ! empty( $link['nofollow'] ) ) {
+			if ( ! empty( $link['is_external'] ) && ! empty( $link['nofollow'] ) ) {
+				$this->add_render_attribute( 'link', 'rel', 'nofollow noopener' );
+			} elseif ( ! empty( $link['nofollow'] ) ) {
 				$this->add_render_attribute( 'link', 'rel', 'nofollow' );
 			}
 		} ?>
