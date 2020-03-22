@@ -54,7 +54,7 @@ class Main {
 	 */
 	private static $reports = [
 		'server' => [],
-		'wordpress' => [],
+		'classicpress' => [],
 		'theme' => [],
 		'user' => [],
 		'plugins' => [],
