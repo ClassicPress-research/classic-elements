@@ -9,7 +9,7 @@
 **License:** GPLv3  
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.html  
 
-Classic Elements of a hard fork of Classic Elements adopted to work with ClassicPress!
+Classic Elements is a hard fork of Elementor adopted to work with ClassicPress!
 
 The most advanced frontend drag & drop page builder. Create high-end, pixel perfect websites at record speeds. Any theme, any page, any design.
 
